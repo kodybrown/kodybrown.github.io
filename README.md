@@ -1,1 +1,5 @@
-# kodybrown.github.io 
+# www.kodybrown.com
+
+Source code for my personal website.
+
+Hosted at [kodybrown.github.io].
