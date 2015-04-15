@@ -1,0 +1,146 @@
+{
+  "email": "thewizard@wasatchwizard.com",
+  "phone": "801.310.1122",
+  "pubdate": "04/15/2015",
+
+  "Technologies": {
+    "UI/UX": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        "I excel at making difficult to understand tasks easy to accomplish.",
+        "I am thorough and avoid quick-fixes where ever possible seeking rather to find and fix the root cause of the problem."
+      ]
+    },
+    "Operating Systems": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "Windows (since Windows 3.1)", "DOS (since 1988)" ],
+        [ "Debian", "Ubuntu", "Linux (since 1998)" ],
+        [ "Haiku (hobbyist)" ],
+        [ "Android 2.2+", "Windows CE/Mobile/Phone" ]
+      ]
+    },
+    "Server Platforms": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "IIS", "ASP.NET" ],
+        [ "Apache", "PHP" ]
+      ]
+    },
+    "Databases": {
+      "enabled": true,
+      "order": 1,
+      "items": {
+        "MySQL":      { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Oracle":     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "PL/SQL":     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
+        "RavenDB":    { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": false, "show_on_list": true },
+        "SQL":        { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "SQL Server": { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "SQLite":     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "T-SQL":      { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true }
+      }
+    },
+    "Misc. Technologies": {
+      "enabled": true,
+      "order": 1,
+      "items": {
+        "Visual Studio":             { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": false },
+        "Visual Studio +Extensions": { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": false, "show_on_list": true },
+        "Web Essentials":            { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Sublime Text":              { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": false },
+        "Sublime Text +Plugins":     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": false, "show_on_list": true },
+        "Eclipse":                   { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Git":                       { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Subversion":                { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Mercurial":                 { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "CVS":                       { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": false, "show_on_list": true },
+        "MSBuild":                   { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "WIX":                       { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "FxCop":                     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
+        "StyleCop":                  { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
+        "Batch":                     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "PowerShell":                { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Scripting & Automation":    { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Paint.NET":                 { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Photoshop":                 { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Illustrator":               { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
+        "C/C++ (since 1989)":        { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
+        "Go":                        { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
+        "Lua":                       { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true }
+      }
+    },
+    "Old stuff": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "Visual Basic 1 > 6", "Classic ASP" ],
+        [ "Flash", "ActionScript", "Silverlight" ],
+        [ "Java", "JSP", "BlackBerry", "J2ME" ],
+        [ "InstallShield ", "NANT", "Perl" ]
+      ]
+    },
+    "JavaScript (since 1997)": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "Hand-coding" ],
+        [ "jQuery", "Underscore" ],
+        [ "JSON", "json2" ],
+        [ "Backbone.js", "Angular.js (some)" ],
+        [ "Node.js" ],
+      ]
+    },
+    "HTML (since 1995)": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "HTML5", "Bootstrap (Bootstrap.js)" ],
+      ]
+    },
+    "CSS (since 1999)": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "CSS3", "SASS", "LESS" ],
+      ]
+    },
+    "Frameworks": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "Sencha Ext JS (5 years)", "Sencha Touch" ],
+        [ "Sencha Ext JS (5 years)", "Sencha Touch" ]
+      ]
+    },
+    "C# (since 2001)": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "ASP.NET WebForms", "MVC (some)" ],
+        [ "WinForms" ],
+        [ "REST", "WCF", "Services", "MEF" ]
+      ]
+    },
+    "Python (since 2008)": {
+      "enabled": true,
+      "order": 1,
+      "items": [
+        [ "I teach a middle-school class on Friday mornings, using http://inventwithpython.com" ]
+      ]
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
