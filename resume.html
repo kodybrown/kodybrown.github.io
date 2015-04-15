@@ -28,6 +28,17 @@
 
     pre b {
       font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    pre, code {
+      font-family: Consolas, monospace;
+    }
+
+    @media print {
+      .noprint {
+        display: none !important;
+      }
     }
   </style>
 </head>
@@ -35,11 +46,11 @@
 <body>
 
   <!-- HEADER -->
-  <div id="header_wrap" class="outer">
+  <div id="header_wrap" class="outer noprint">
       <header class="inner">
         <!--<a id="forkme_banner" href="https://github.com/kodybrown">View on GitHub</a>-->
         <h1 id="project_title">www.kodybrown.com</h1>
-        <h2 id="project_tagline">personal website - <a href="/" class="white boldhover">home</a></h2>
+        <h2 id="project_tagline">personal website:&nbsp; <a href="/" class="white">home</a> <span>|</span> <a href="resume.html" class="white">resume</a></h2>
       </header>
   </div>
 
@@ -47,9 +58,9 @@
   <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
 
-      <div id="resume-menu">
-        <a href="#">default</a> | <a href="#">complete</a> | <a href="#">searchable (complete)</a>
-      </div>
+      <!-- <div id="resume-menu" class="noprint">
+        <a href="#" id="showDefault()">default</a> | <a href="#" id="showComplete()">searchable (complete)</a>
+      </div> -->
 
       <div id="default">
       <pre><code>
@@ -63,7 +74,7 @@
                                         /___/                                       thewizard@wasatchwizard.com
 ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-                                          ————≡≡≡ <b>TECHNOLOGIES</b> ≡≡≡————
+                                          ————≡≡≡ <b>Technologies</b> ≡≡≡————
 
 — UI/UX ——                                                — Operating Systems ——
 • I excel at making difficult to understand tasks         • Windows (since Windows 3.1) / DOS (since 1988)
@@ -95,7 +106,14 @@
 • I teach a middle-school class on Friday mornings,       • Java / JSP / BlackBerry / J2ME
   using http://inventwithpython.com.                      • InstallShield  / NANT / Perl
 
-                                          ————≡≡≡ <b>WORK HISTORY</b> ≡≡≡————
+                                           ————≡≡≡ <b>Education</b> ≡≡≡————
+
+Thomas Downey High School (1.5 yrs.)    » Graduated at 15 years old
+Modesto Junior College (2.5 yrs.)       » Electronics / Robotics / C / C++
+University of Phoenix (1 yr.)           » Business Management
+BrainBench.com                          » C# / ASP.NET / HTML / CSS / Older: VB6 / SQL Server / Windows Server
+
+                                          ————≡≡≡ <b>Work History</b> ≡≡≡————
 
 — ConsultNet (9 months/jul 2013–current) ——
 • HTML5 / CSS3 (LESS) / Bootstrap                         • ASP.NET Web API / C# / SQL Server
@@ -182,13 +200,6 @@ enterprise-class UI. Kody always went the extra mile to deliver more than what w
 • Customized computer hardware & software solutions       • Office 95 solutions (Access & Word integration)
 • Web design and site creation in HTML.
 
-                                           ————≡≡≡ <b>EDUCATION</b> ≡≡≡————
-
-Thomas Downey High School (1.5 yrs.)    » Graduated at 15 years old
-Modesto Junior College (2.5 yrs.)       » Electronics / Robotics / C / C++ / Pascal
-University of Phoenix (1 yr.)           » Business Management
-BrainBench.com                          » C# / ASP.NET / HTML / CSS / Older: VB6 / SQL Server / Windows Server
-
 References are available upon request.
       </code></pre>
       </div>
@@ -201,12 +212,24 @@ References are available upon request.
   </div>
 
   <!-- FOOTER  -->
-  <div id="footer_wrap" class="outer">
+  <div id="footer_wrap" class="outer noprint">
     <footer class="inner">
       <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       <p>What happened to my Raspberry Pi? It is great, however my home power/internet is not so reliable.</a></p>
     </footer>
   </div>
+
+  <script>
+    function showDefault() {
+      var defEl = document.getElementById(""),
+          comEl = document.getElementById("");
+    }
+
+    function showComplete() {
+
+
+    }
+  </script>
 
   <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

@@ -11,7 +11,7 @@ a:hover {
 }
 a:active {
   font-weight: 300;
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom: solid 1px;
 }
 
@@ -39,3 +39,8 @@ a.white:hover {
   text-decoration: underline;
   border-bottom: 0px;
 }
+
+#project_tagline span {
+  color: #888;
+}
+
