@@ -1,0 +1,41 @@
+
+a {
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+a:hover {
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+a:active {
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+a.bold {
+  font-weight: bold;
+}
+a.bold:hover {
+  font-weight: bold;
+}
+
+a.boldhover {
+  font-weight: 300;
+}
+a.boldhover:hover {
+  font-weight: bold;
+}
+
+a.white {
+  color: white;
+  text-decoration: none;
+  border-bottom: 0px;
+}
+a.white:hover {
+  color: white;
+  text-decoration: underline;
+  border-bottom: 0px;
+}
