@@ -9,11 +9,11 @@ a:hover {
   text-decoration: none;
   border-bottom: solid 1px;
 }
-a:active {
+/*a:active {
   font-weight: 300;
   text-decoration: none !important;
   border-bottom: solid 1px;
-}
+}*/
 
 a.bold {
   font-weight: bold;
