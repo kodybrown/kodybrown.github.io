@@ -7,7 +7,7 @@
 
 :git_commit
   set "msg=%*"
-  if "%msg%"=="" set "msg=."
+  if "%msg%"=="" set "msg=updated."
   echo commiting..
   call git.exe commit -m "%msg%"
   set "msg="
