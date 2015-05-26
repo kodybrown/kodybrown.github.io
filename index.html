@@ -1,64 +1,162 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="description" content="kodybrown.com : personal website">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="kodybrown.com : personal website">
 
-  <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/canvas.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/canvas.css">
 
-  <title>www.kodybrown.com - home</title>
+    <title>www.kodybrown.com — home</title>
+
+    <style>
+        #header_wrap .inner {
+            padding: 50px 10px 50px 10px;
+        }
+
+        #large_topics,
+        #small_topics {
+            display: block;
+            clear: both;
+            margin: 0 -16px;
+        }
+
+        .topic {
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            padding: 0;
+        }
+
+        #large_topics .topic {
+            width: 174px;
+            height: 230px;
+            margin: 20px;
+        }
+
+            #large_topics .topic img {
+                width: 170px;
+                height: 210px;
+                vertical-align: top;
+                padding: 0;
+                margin: 0;
+            }
+
+        #small_topics .topic {
+            width: 64px;
+            height: 64px;
+            margin: 20px;
+        }
+
+            #small_topics .topic img {
+                width: 64px;
+                height: 64px;
+                vertical-align: top;
+                padding: 0;
+                margin: 0;
+            }
+
+        .topic:hover img {
+            border: 1px solid #999;
+            box-shadow: 0 0 5px #999;
+            -webkit-box-shadow: 0 0 5px #999;
+            -moz-box-shadow: 0 0 5px #999;
+            -o-box-shadow: 0 0 5px #999;
+            -ms-box-shadow: 0 0 5px #999;
+        }
+
+        .topic div {
+            color: #777;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+        }
+
+        #large_topics .topic div {
+            font-size: 11pt;
+        }
+
+        #small_topics .topic div {
+            font-size: 10pt;
+        }
+
+        .topic:hover div {
+            color: #333;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <div id="header_wrap" class="outer">
-      <header class="inner">
-        <!--<a id="forkme_banner" href="https://github.com/kodybrown">View on GitHub</a>-->
-        <h1 id="project_title">www.kodybrown.com</h1>
-        <h2 id="project_tagline">personal website:&nbsp; <a href="/" class="white">home</a> <span>|</span> <a href="resume.html" class="white">resume</a></h2>
-      </header>
-  </div>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer noprint">
+        <header class="inner">
+            <h1 id="project_title">www.kodybrown.com</h1>
+            <!--<h2 id="project_tagline"><a href="resume.html" class="white">my resume</a></h2>-->
+        </header>
+    </div>
 
-  <!-- MAIN CONTENT -->
-  <div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
 
-      <h3>
-        <a id="welcome-home" class="anchor" href="#welcome-home" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to my new home on the Internet... again.</h3>
+            <div id="large_topics">
+                <div id="goto_resume" class="topic" title="my resume" onclick="document.location.href='resume.html'">
+                    <img src="images/wordle_8.png" style="background-color: #fff;" /><div>my resume</div>
+                </div>
+                <!--<div id="goto_blog" class="topic" title="my blog" onclick="document.location.href='http://elegantdevelopment.blogspot.com'">
+                    <img src="images/.png" /><div>my blog</div>
+                </div>-->
+                <div id="goto_github" class="topic" title="github profile" onclick="document.location.href='https://github.com/kodybrown'">
+                    <img src="images/github_logo.png" /><div>github</div>
+                </div>
+                <div id="goto_linkedin" class="topic" title="linkedin profile" onclick="document.location.href='https://www.linkedin.com/in/kodybrown'">
+                    <img src="images/linkedin_logo.png" /><div>linkedin</div>
+                </div>
+            </div>
 
-      <p>&nbsp;</p>
+            <div id="small_topics">
+                <!--<div id="goto_minecraft" class="topic" title="minecraft.net" onclick="document.location.href='http://minecraft.net'">
+                    <img src="images/minecraft.png" /><div>minecraft</div>
+                </div>-->
+                <div id="goto_minecraft" class="topic" title="my minecraft server" onclick="document.location.href='http://wasatchwizard.homedns.org/minecraft-server.php'">
+                    <img src="images/minecraft_server.png" /><div>my&nbsp;server</div>
+                </div>
+                <!--<div id="goto_minecraft" class="topic" title="minecraft" onclick="document.location.href='http://wasatchwizard.homedns.org/minecraft-server.php'">
+                    <img src="images/minecraft.png" style="background-color: #fff;" /><div>minecraft</div>
+                </div>-->
 
-      <h3>
-      <a id="my-resume" class="anchor" href="resume.html" aria-hidden="true"><span class="octicon octicon-link"></span>my resume</a></h3>
+            </div>
 
-      <p>&nbsp;</p>
+            <p class="noprint">&nbsp;</p>
 
-      <p>&nbsp;</p>
+            <p class="noprint">&nbsp;</p>
 
-    </section>
-  </div>
+        </section>
+    </div>
 
-  <!-- FOOTER  -->
-  <div id="footer_wrap" class="outer">
-    <footer class="inner">
-      <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      <p>What happened to my Raspberry Pi? It is great, however my home power/internet is not so reliable.</a></p>
-    </footer>
-  </div>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+            <p>Copyright &copy; 2001-2015 <a href="mailto:thewizard@wasatchwizard.com" style="text-decoration: none;">Kody Brown</a>. All Rights Reserved. Published with <a href="https://pages.github.com" style="text-decoration: none;">GitHub Pages</a>.</p>
+            <!--<p>What happened to my Raspberry Pi? It is great, however my home power/internet is not so reliable.</p>-->
+        </footer>
+    </div>
 
-  <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker("UA-305845-4");
-      pageTracker._trackPageview();
-    } catch (err) { }
-  </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-305845-4");
+            pageTracker._trackPageview();
+        } catch (err) { }
+    </script>
 
 </body>
 </html>

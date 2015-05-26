@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="kodybrown.com : personal website">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/canvas.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/canvas.css">
 
-    <title>www.kodybrown.com - resume</title>
+    <title>www.kodybrown.com — resume</title>
 
     <style>
         #main_content {
-            max-width: 910px;
+            margin-bottom: 24px;
         }
-    </style>
 
-    <style>
-        #resume-menu {
-            margin-bottom: 8px;
+        #resume_ascii {
+            display: none;
         }
+
+        #resume-menu {
+            margin-bottom: 18px;
+        }
+
+            #resume-menu span {
+                font-size: 8pt;
+                vertical-align: super;
+            }
 
         .resume {
         }
@@ -66,6 +73,35 @@
                 line-height: 1.4;
             }
 
+        #resume_intro {
+        }
+
+            #resume_intro img {
+                width: 99%;
+                background-color: #fff;
+                padding: 0;
+                margin: 0;
+            }
+
+        #header_wrap {
+            padding-top: 6px;
+        }
+
+            #header_wrap .inner {
+                padding: 0 10px 0;
+            }
+
+                #header_wrap .inner h2 {
+                    margin: 0;
+                }
+
+                #header_wrap .inner a.selected {
+                    text-decoration: underline;
+                }
+
+        #footer_wrap .inner {
+            padding: 0;
+        }
 
         @media print {
             .noprint {
@@ -80,9 +116,7 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer noprint">
         <header class="inner">
-            <!--<a id="forkme_banner" href="https://github.com/kodybrown">View on GitHub</a>-->
-            <h1 id="project_title">www.kodybrown.com</h1>
-            <h2 id="project_tagline">personal website:&nbsp; <a href="/" class="white">home</a> <span>|</span> <a href="resume.html" class="white">resume</a></h2>
+            <h2 id="project_tagline"><a href="index.html" class="white" title="home">www.kodybrown.com</a> <span>»</span> <a href="resume.html" class="white selected">my resume</a></h2>
         </header>
     </div>
 
@@ -91,11 +125,25 @@
         <section id="main_content" class="inner">
 
             <div id="resume-menu" class="noprint">
-                <!--<a href="#" id="showDefault()">default</a> | <a href="#" id="showComplete()">searchable (complete)</a>-->
-                <a href="Resume-of-Kody_Brown-12May2015.docx" id="download-word-format">word</a>
+                <a href="#" onclick="show_resume('intro')">intro</a> |
+                <!--<a href="#" onclick="show_resume('default')" title="standard resume">default</a> <span><a href="#" onclick="download_resume('default.doc')">(word)</a></span> |-->
+                <!--<a href="#" onclick="show_resume('complete')" title="complete list of all details and highly searchable">complete</a> <span><a href="#" onclick="download_resume('complete.doc')">(word)</a></span> |-->
+                <a href="#" onclick="show_resume('ascii')" title="fun with ascii">ascii</a> (<span><a href="#" onclick="download_resume('ascii.doc')">word</a>, <a href="#" onclick="download_resume('ascii.txt')">txt</a></span>)
             </div>
 
-            <div id="default">
+            <div id="resume_intro" class="resume_section">
+                <img src="images/wordle_8.png" />
+            </div>
+
+            <div id="resume_default" class="resume_section">
+                DEFAULT
+            </div>
+
+            <div id="resume_complete" class="resume_section">
+                COMPLETE
+            </div>
+
+            <div id="resume_ascii" class="resume_section">
                 <pre><code>
                    _   __            _           _____     ______
                   | | / /           | |         /  ___|    | ___ \
@@ -103,114 +151,138 @@
                   |    \  / _ \  / _` || | | |   `--. \    |  __ \| '__| / _ \ \ \ /\ / /| '_ \
                   | |\  \| (_) || (_| || |_| |  /\__/ / _  | |_/  | |   | (_) | \ V  V / | | | |
                   |_| \__\\___/  \__,_| \__, |  \____/ (_) |_____/|_|    \___/   \_/\_/  |_| |_|
----------------------------------------- __/ |------------------------------------------------------------------
+———————————————————————————————————————— __/ |——————————————————————————————————————————————————————————————————
                                         /___/                                       thewizard@wasatchwizard.com
-----------------------------------------------------------------------------------------------------------------
-                <span class="section">----≡≡≡ Technologies ≡≡≡----</span>
-<span class="techlabel">- General --</span>                                              <span class="techlabel">- Operating Systems --</span>
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+                                          ————=== Technologies ===————
+
+— General ——                                              — Operating Systems ——
  • I excel at making difficult to understand tasks         • Windows (since Windows 3.1) · DOS (since 1988)
    easy to accomplish.                                     • Debian · Ubuntu · Linux (since 1998)
  • I am thorough and avoid quick-fixes where ever          • Haiku (hobbyist)
    possible seeking rather to find and fix the root        • Android · Windows CE / Mobile / Phone
    cause of the problem.
-                <span class="techlabel">- Server Platforms --</span>
-<span class="techlabel">- JavaScript </span><span class="italic">(since 1997) --</span>                               • IIS · ASP.NET · Apache · PHP
+                                                          — Server Platforms ——
+— JavaScript (since 1997) ——                               • IIS · ASP.NET · Apache · PHP
  • Hand-coding                                             • VMware · VirtualBox · QEMU
  • jQuery · jQuery UI / Mobile · Underscore
- • Sencha Ext JS (5+ years) · Sencha Touch                 <span class="techlabel">- Databases --</span>
+ • Sencha Ext JS (5+ years) · Sencha Touch                 — Databases ——
  • Backbone.js · Angular.js (some)                         • SQL · SQL Server · MySQL · Oracle · SQLite
-<span class="techlabel">- HTML </span><span class="italic">(since 1995) --</span>                                    <span class="techlabel">- Misc. Technologies --</span>
+
+— HTML (since 1995) ——                                    — Misc. Technologies ——
  • HTML5 · Bootstrap (Bootstrap.js)                        • Visual Studio · Sublime Text · Vim
                                                            • Sublime Text +Plugins · Vim · Eclipse
-<span class="techlabel">- CSS </span><span class="italic">(since 1999) --</span>                                      • Git · TFS · Subversion · Mercurial/hg · CVS
+— CSS (since 1999) ——                                      • Git · TFS · Subversion · Mercurial/hg · CVS
  • CSS3 · SASS-SCSS · LESS                                 • MSBuild · WIX
-                                                           • Batch · PowerShell · Scripting &amp; Automation
-<span class="techlabel">- C# </span><span class="italic">(since 2001) --</span>                                       • Paint.NET · Photoshop (Creative Suite)
- • ASP.NET WebForms &amp; MVC                                  • C/C++ (since 1989) · Go · Lua
+                                                           • Batch · PowerShell · Scripting & Automation
+— C# (since 2001) ——                                       • Paint.NET · Photoshop (Creative Suite)
+ • ASP.NET WebForms & MVC                                  • C/C++ (since 1989) · Go · Lua
  • WinForms · Console
- • WCF · Web Services · MEF                                <span class="techlabel">- Old stuff --</span>
+ • WCF · Web Services · MEF                                — Old stuff ——
                                                            • Visual Basic 1 > 6 · Classic ASP
-<span class="techlabel">- Python </span><span class="techlabel">(since 2008) --</span>                                   • Flash · ActionScript · Silverlight
+— Python (since 2008) ——                                   • Flash · ActionScript · Silverlight
  • I teach a middle-school class on Friday mornings,       • Java · JSP · BlackBerry · J2ME
-   using http://inventwithpython.com.                      • InstallShield  · NANT · Perl
-                                           ----≡≡≡ <b>Education</b> ≡≡≡----
+   using http://inventwithpython.com.                      • InstallShield  · NANT · Perl
+
+                                           ————=== Education ===————
+
 Thomas Downey High School (1.5 yrs.)    » Graduated at 15 years old
 Modesto Junior College (2.5 yrs.)       » Electronics · Robotics · C · C++
 University of Phoenix (1 yr.)           » Business Management
 BrainBench.com                          » C# · ASP.NET · HTML · CSS · Older: VB6 · SQL Server · Windows Server
-                                          ----≡≡≡ <b>Work History</b> ≡≡≡----
-- ConsultNet (jul 2013–current) --
- • HTML5 · CSS3 · LESS &amp; SASS · Bootstrap                  • AngularJS
- • C# · ASP.NET WebForms, MVC &amp; WebAPI                     • SQL Server · Oracle
+
+                                          ————=== Work History ===————
+
+— ConsultNet (jul 2013–current) ——
+ • HTML5 · CSS3 · LESS & SASS · Bootstrap                  • AngularJS
+ • C# · ASP.NET WebForms, MVC & WebAPI                     • SQL Server · Oracle
  • JavaScript · jQuery · JSON                              • SCRUM · Agile
  • Responsive design websites                              • Git · GitHub · Subversion
-- Venafi (5 years/jul 2008-jul 2013) --
+
+— Venafi (5 years/jul 2008-jul 2013) ——
  • HTML5 · CSS3 (LESS) · Bootstrap                         • MS UnitTests · NUnit · Watin (some Selenium)
  • JavaScript · jQuery · Backbone.js · JSON                • Android · Java · REST SDK · WCF · MEF
  • C# ASP.NET · ASP.NET MVC · WCF · REST · JSON            • Subversion > Git · SCRUM
- • XSS · CSRF Prevention &amp; Training                        • SCRUM-ish Agile
- » <span class="italic">"Kody was able to take an old, non user friendly console and architect a faster, cleaner design that actually
-    made sense to the users." – Venafi employee</span>
- » <span class="italic">"As a product owner, I consistently went to Kody for basic functionality and walked away with highly usable,
-    enterprise-class UI. Kody always went the extra mile to deliver more than what was asked for." –Venafi employee</span>
-- Essential C# --
+ • XSS · CSRF Prevention & Training                        • SCRUM-ish Agile
+
+ » "Kody was able to take an old, non user friendly console and architect a faster, cleaner design that actually
+    made sense to the users." – Venafi employee
+ » "As a product owner, I consistently went to Kody for basic functionality and walked away with highly usable,
+    enterprise-class UI. Kody always went the extra mile to deliver more than what was asked for." –Venafi employee
+
+— Essential C# ——
  • Edited several chapters, reviewed many more.
  • Edited all source code from the book: https://github.com/IntelliTect/EssentialCSharp
- » <span class="italic">"Your contributions are huge...."
-   "Fantastic job with chapters 18, 19, and 0. Those were some valuable catches you made."
-   "You are finding stuff that has been missed through multiple editions before." - Mark Michaelis, Author</span>
-- Open Source Contributor --
+
+ » "Your contributions are huge...."
+   "Fantastic job with chapters 18, 19, and 0. Those were some valuable catches you made."
+   "You are finding stuff that has been missed through multiple editions before." — Mark Michaelis, Author
+
+— Open Source Contributor ——
  • Numerous open source contributions and projects: https://github.com/kodybrown
-- OneGreatFamily.com (2 years/jul 2006-jul 2008) --
+
+— OneGreatFamily.com (2 years/jul 2006-jul 2008) ——
  • Web Architect and team lead for Genealogy website       • C# ASP.NET · ASP.NET AJAX · Oracle · MySQL
- • HTML · CSS · JavaScript (including mobile devices)      • C# &amp; C++ backend, data, and transport layers
- • Facebook apps using FBML &amp; FBJS · iGoogle widgets       • SCRUM · Team Foundation Server (TFS)
+ • HTML · CSS · JavaScript (including mobile devices)      • C# & C++ backend, data, and transport layers
+ • Facebook apps using FBML & FBJS · iGoogle widgets       • SCRUM · Team Foundation Server (TFS)
+
  "We were sorry you left. We had to hire three web guys to replace you and they still can't keep up!"
- - from an employee of OneGreatFamily.com 2 years later.
-- Patent #8,275,895 --
+ — from an employee of OneGreatFamily.com 2 years later.
+
+— Patent #8,275,895 ——
  • "Systems and methods for establishing a trusted dynamic host configuration protocol connection"
-- LANDesk Software, Inc. (3.5 years/mar 2003-jul 2006) --
+
+— LANDesk Software, Inc. (3.5 years/mar 2003-jul 2006) ——
  • HTML · CSS · JavaScript                                 • CVS > Subversion · Agile · Oracle · SQL Server
  • Classic ASP > C# ASP.NET WebForms, AJAX                 • C++
- • C# WinForms management console &amp; framework              • InstallShield · NANT · XML · XSLT · Batch · Perl
+ • C# WinForms management console & framework              • InstallShield · NANT · XML · XSLT · Batch · Perl
  • Message-based SDK: C# · MSMQ · XML · SOAP · WinForm · Console
- • LANDesk Handheld Manager (Client &amp; Server):
+ • LANDesk Handheld Manager (Client & Server):
    C++ · MFC · Pocket PC · WinCE · Windows Mobile (over 1 million installs) · BlackBerry · Java · J2ME
- • Flash: real-time charts · reporting · sliders &amp; list controls using ActionScript.
+ • Flash: real-time charts · reporting · sliders & list controls using ActionScript.
  • LDMS Client features: auto update, silent installation, task scheduler, and more..
- "That [MBSDK] service is solid! We never have to touch it! It just works!" - employee of LANDesk 5 years later.
-- Consultant (10+ years mixed throughout) --
- • Numerous websites for my own customers, friends, etc.   • Business management apps: Windows &amp; Responsive Web
+
+ "That [MBSDK] service is solid! We never have to touch it! It just works!" — employee of LANDesk 5 years later.
+
+— Consultant (10+ years mixed throughout) ——
+ • Numerous websites for my own customers, friends, etc.   • Business management apps: Windows & Responsive Web
  • JavaScript · HTML5 · CSS3 · PHP · C# · ASP.NET          • MySQL · SQL Server · IIS · Apache · etc.
  • WordPress · Blogger · BlogEngine.NET · Joomla · Drupal  • Custom-written email/marketing campaign manager.
  • MySQL · SQL Server · IIS · Apache · etc.
-- Knightsbridge, Inc. (1.5 years/aug 2001-mar 2003) --
- • Visual Basic 6 · Classic ASP > C# ASP.NET · XML &amp; XSLT  • Customer follow-up &amp; service call center software
- • SQL Server DBA · unique replication-performance setup   • Online polls &amp; questionnaires
+
+— Knightsbridge, Inc. (1.5 years/aug 2001-mar 2003) ——
+ • Visual Basic 6 · Classic ASP > C# ASP.NET · XML & XSLT  • Customer follow-up & service call center software
+ • SQL Server DBA · unique replication-performance setup   • Online polls & questionnaires
+
  "I didn't think these reports were possible! Each one saves our customers a couple days during their
- [certification process]!" - Kathy Cameron, owner of Knightsbridge, Inc.
-- SunGard Expert Solutions (1.5 years/feb 2000-aug 2001) --
+ [certification process]!" — Kathy Cameron, owner of Knightsbridge, Inc.
+
+— SunGard Expert Solutions (1.5 years/feb 2000-aug 2001) ——
  • Java · Swing · JSP · Servlets (some ASP)                • HTML · CSS · JavaScript · Source Safe · XP-Agile
- • Online &amp; desktop financial calculators              • Web charting without JavaScript
- "These pages look stunning!" - Employee of New York Life, UI team, a customer of SunGard.
-- Computer Consultants Corp. (3 months/2001/Contractor) --
+ • Online & desktop financial calculators              • Web charting without JavaScript
+
+ "These pages look stunning!" — Employee of New York Life, UI team, a customer of SunGard.
+
+— Computer Consultants Corp. (3 months/2001/Contractor) ——
  • Online banking website (used by 700+ credit unions)     • HTML · JavaScript · CSS · Classic ASP
  • Themed style sheets for easily integrating with existing credit union websites.
-- Feature Films for Families (1 year/mar 1999-feb 2000) --
+
+— Feature Films for Families (1 year/mar 1999-feb 2000) ——
  • HTML · JavaScript · Classic ASP · Java Swing · Oracle · Waterfall
  • Intranet-based Call Center Software · Web-based Online Store
-- Paymentech, Inc. (1 year/feb 1998-mar 1999) --
- • Visual Basic 5 &amp; 6 · ASP · Visual Source Safe · Agile   • Oracle · SQL Server · Crystal Reports
+
+— Paymentech, Inc. (1 year/feb 1998-mar 1999) ——
+ • Visual Basic 5 & 6 · ASP · Visual Source Safe · Agile   • Oracle · SQL Server · Crystal Reports
  • World's first online credit card banking portal
-- Bricksoft Computers (Owner, 3 years/sep 1995-aug 1998) --
- • Customized computer hardware &amp; software solutions       • Office 95 solutions (Access &amp; Word integration)
+
+— Bricksoft Computers (Owner, 3 years/sep 1995-aug 1998) ——
+ • Customized computer hardware & software solutions       • Office 95 solutions (Access & Word integration)
  • Web design and site creation in HTML.
-References are available upon request.</code></pre>
+
+References are available upon request.
+</code></pre>
             </div>
-
-            <p class="noprint">&nbsp;</p>
-
-            <p class="noprint">&nbsp;</p>
 
         </section>
     </div>
@@ -218,20 +290,25 @@ References are available upon request.</code></pre>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer noprint">
         <footer class="inner">
-            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-            <p>What happened to my Raspberry Pi? It is great, however my home power/internet is not so reliable.</a></p>
+            <p>Copyright &copy; 2001-2015 <a href="mailto:thewizard@wasatchwizard.com" style="text-decoration: none;">Kody Brown</a>. All Rights Reserved. Published with <a href="https://pages.github.com" style="text-decoration: none;">GitHub Pages</a>.</p>
+            <!--<p>What happened to my Raspberry Pi? It is great, however my home power/internet is not so reliable.</p>-->
         </footer>
     </div>
 
     <script>
-        function showDefault() {
-            var defEl = document.getElementById(""),
-                comEl = document.getElementById("");
+        function show_resume(resume_name) {
+            var el = document.getElementById("resume_" + resume_name),
+                els = document.getElementsByClassName("resume_section");
+            for (var i = 0; i < els.length; i++) {
+                if (els[i].id != el.id) {
+                    els[i].style.display = "none";
+                }
+            }
+            el.style.display = "block";
         }
 
-        function showComplete() {
-
-
+        function download_resume(resume_name) {
+            window.location.href = "resume_" + resume_name;
         }
     </script>
 
@@ -244,6 +321,13 @@ References are available upon request.</code></pre>
             var pageTracker = _gat._getTracker("UA-305845-4");
             pageTracker._trackPageview();
         } catch (err) { }
+    </script>
+
+    <script src="js/main.js"></script>
+    <script>
+        addOnLoadEvent(function() {
+            show_resume('intro');
+        });
     </script>
 
 </body>

@@ -1,146 +1,590 @@
 {
-  "email": "thewizard@wasatchwizard.com",
-  "phone": "801.310.1122",
-  "pubdate": "04/15/2015",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"email": "thewizard@wasatchwizard.com",
+	"phone": "801.310.1122",
+	"pubdate": "05/25/2015",
 
-  "Technologies": {
-    "UI/UX": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        "I excel at making difficult to understand tasks easy to accomplish.",
-        "I am thorough and avoid quick-fixes where ever possible seeking rather to find and fix the root cause of the problem."
-      ]
-    },
-    "Operating Systems": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "Windows (since Windows 3.1)", "DOS (since 1988)" ],
-        [ "Debian", "Ubuntu", "Linux (since 1998)" ],
-        [ "Haiku (hobbyist)" ],
-        [ "Android 2.2+", "Windows CE/Mobile/Phone" ]
-      ]
-    },
-    "Server Platforms": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "IIS", "ASP.NET" ],
-        [ "Apache", "PHP" ]
-      ]
-    },
-    "Databases": {
-      "enabled": true,
-      "order": 1,
-      "items": {
-        "MySQL":      { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Oracle":     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "PL/SQL":     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
-        "RavenDB":    { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": false, "show_on_list": true },
-        "SQL":        { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "SQL Server": { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "SQLite":     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "T-SQL":      { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true }
-      }
-    },
-    "Misc. Technologies": {
-      "enabled": true,
-      "order": 1,
-      "items": {
-        "Visual Studio":             { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": false },
-        "Visual Studio +Extensions": { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": false, "show_on_list": true },
-        "Web Essentials":            { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Sublime Text":              { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": false },
-        "Sublime Text +Plugins":     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": false, "show_on_list": true },
-        "Eclipse":                   { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Git":                       { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Subversion":                { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Mercurial":                 { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "CVS":                       { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": false, "show_on_list": true },
-        "MSBuild":                   { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "WIX":                       { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "FxCop":                     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
-        "StyleCop":                  { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
-        "Batch":                     { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "PowerShell":                { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Scripting & Automation":    { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Paint.NET":                 { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Photoshop":                 { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Illustrator":               { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
-        "C/C++ (since 1989)":        { "first_used": "", "last_used": "", "skill_level": 0, "show_small": true, "show_large": true, "show_on_list": true },
-        "Go":                        { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true },
-        "Lua":                       { "first_used": "", "last_used": "", "skill_level": 0, "show_small": false, "show_large": true, "show_on_list": true }
-      }
-    },
-    "Old stuff": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "Visual Basic 1 > 6", "Classic ASP" ],
-        [ "Flash", "ActionScript", "Silverlight" ],
-        [ "Java", "JSP", "BlackBerry", "J2ME" ],
-        [ "InstallShield ", "NANT", "Perl" ]
-      ]
-    },
-    "JavaScript (since 1997)": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "Hand-coding" ],
-        [ "jQuery", "Underscore" ],
-        [ "JSON", "json2" ],
-        [ "Backbone.js", "Angular.js (some)" ],
-        [ "Node.js" ],
-      ]
-    },
-    "HTML (since 1995)": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "HTML5", "Bootstrap (Bootstrap.js)" ],
-      ]
-    },
-    "CSS (since 1999)": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "CSS3", "SASS", "LESS" ],
-      ]
-    },
-    "Frameworks": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "Sencha Ext JS (5 years)", "Sencha Touch" ],
-        [ "Sencha Ext JS (5 years)", "Sencha Touch" ]
-      ]
-    },
-    "C# (since 2001)": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "ASP.NET WebForms", "MVC (some)" ],
-        [ "WinForms" ],
-        [ "REST", "WCF", "Services", "MEF" ]
-      ]
-    },
-    "Python (since 2008)": {
-      "enabled": true,
-      "order": 1,
-      "items": [
-        [ "I teach a middle-school class on Friday mornings, using http://inventwithpython.com" ]
-      ]
-    }
-  }
+	"Technologies": {
+
+		"UI/UX": {
+			"enabled": true,
+			"items": [
+				"I excel at making difficult to understand tasks easy to accomplish.",
+				"I am thorough and avoid quick-fixes where ever possible seeking rather to find and fix the root cause of the problem."
+			]
+		},
+
+		"Team Management": {
+			"enabled": true,
+			"target_resume": "",
+			"items": [
+				"...",
+				"...",
+				"...",
+				"...",
+				"..."
+			]
+		},
+
+		"Programming Languages": {
+			"enabled": true,
+			"items": [
+				{
+					"name": "Batch files",
+					"since": "1988"
+				},
+				{
+					"name": "BASH",
+					"show_level": 2,
+					"since": "2010"
+				},
+				{
+					"name": "C#",
+					"since": "2001"
+				},
+				{
+					"name": "C/C++",
+					"since": "1989/1992"
+				},
+				{
+					"name": "CSS",
+					"expanded": "CSS/CSS3",
+					"since": "1999"
+				},
+				{
+					"name": "HTML",
+					"expanded": "HTML/HTML5",
+					"since": "1995",
+					"subitems": [ ]
+				},
+				{
+					"name": "Java",
+					"show_level": 2,
+					"since": "2000",
+					"last_used": "2002",
+					"target_resume": "java"
+				},
+				{
+					"name": "JavaScript",
+					"since": "1997",
+					"subitems": [
+						{
+							"name": "Hand-coding"
+						},
+						{
+							"name": "jQuery"
+						},
+						{
+							"name": "Underscore"
+						},
+						{
+							"name": "JSON"
+						},
+						{
+							"name": "Backbone.js"
+						},
+						{
+							"name": "Angular.js"
+						},
+						{
+							"name": "Node.js"
+						}
+					]
+				},
+				{
+					"name": "PowerShell",
+					"since": "2012"
+				},
+				{
+					"name": "SQL",
+					"since": "1999",
+					"expanded": "SQL/TSQL/PLSQL"
+				},
+				{
+					"name": "XAML",
+					"show_level": 2
+				},
+				{
+					"name": "XML/XSLT",
+					"since": "2004"
+				}
+			]
+		},
+
+		"Development Software & Tools": {
+			"enabled": true,
+			"items": [
+				{
+					"name": "Android"
+				},
+				{
+					"name": "ASP.NET"
+				},
+				{
+					"name": "MS/NUnit"
+				},
+				{
+					"name": "PHP"
+				},
+				{
+					"name": "REST"
+				},
+				{
+					"name": "Visual Studio"
+				},
+				{
+					"name": "Windows CE/Mobile/CE.net/XPembedded"
+				},
+				{
+					"name": "Windows Phone 7"
+				},
+				{
+					"name": "Windows Desktop (7 and 8 + Metro)"
+				}
+			]
+		},
+
+		"Development Target Platforms": {
+			"enabled": true,
+			"items": [
+				{
+					"name": "ASP.NET"
+				},
+				{
+					"name": "BlackBerry",
+					"show_level": 2
+				},
+				{
+					"name": "Android"
+				},
+				{
+					"name": "PHP"
+				},
+				{
+					"name": "REST"
+				},
+				{
+					"name": "Visual Studio"
+				},
+				{
+					"name": "Windows Mobile/Phone",
+					"expanded": "Windows CE/Mobile/CE.net/XPembedded/Phone 7/Phone 8"
+				},
+				{
+					"name": "Win32",
+					"expanded": "Win32/COM/COM+/DCOM"
+				},
+				{
+					"name": "Windows Forms",
+					"expanded": "Windows Forms/Microsoft.NET"
+				},
+				{
+					"name": "MS/NUnit"
+				}
+			]
+		},
+
+		"Revision Control": {
+			"show_level": 3,
+			"items": [
+				{
+					"name": "Git"
+				},
+				{
+					"name": "Subversion",
+					"expanded": "Subversion (svn)"
+				},
+				{
+					"name": "Mercurial",
+					"expanded": "Mercurial (hg)"
+				},
+				{
+					"name": "Team Foundation Server (TFS)"
+				},
+				{
+					"name": "Visual Source Safe (VSS)"
+				},
+				{
+					"name": "CVS"
+				}
+			]
+		},
+
+		"Server Software": {
+			"show_level": 1,
+			"items": [
+				{
+					"name": "IIS"
+				},
+				{
+					"name": "SQL Server"
+				},
+				{
+					"name": "MySQL"
+				},
+				{
+					"name": "SQLite"
+				},
+				{
+					"name": "Oracle"
+				},
+				{
+					"name": "Apache"
+				}
+			]
+		},
+
+		"Desktop Operating Systems": {
+			"enabled": true,
+			"items": [
+				{
+					"name": "Windows",
+					"expanded": "Windows 3.1/95/98/ME/2000/XP/Vista/7/8/8.1",
+					"since": "Windows 3.1",
+					"show_level": 1
+				},
+				{
+					"name": "DOS",
+					"expanded": "DOS/DRDOS",
+					"since": "1988",
+					"show_level": 1
+				},
+				{
+					"name": "Haiku",
+					"expanded": "Haiku (hobbyist)",
+					"since": "BeOS 3",
+					"show_level": 1
+				},
+				{
+					"name": "Linux",
+					"expanded": "GNU/Linux, Debian, Ubuntu",
+					"since": "1998",
+					"show_level": 1
+				},
+				{
+					"name": "Windows Server",
+					"expanded": "Windows NT/2000/2003/2008/2012",
+					"since": "Windows NT 3.51",
+					"show_level": 1
+				}
+			]
+		},
+
+		"Operating Systems": {
+			"enabled": true,
+			"items": [
+				"Windows (since Windows 3.1)",
+				"DOS (since 1988)",
+				"Debian",
+				"Ubuntu",
+				"Linux (since 1998)",
+				"Haiku (hobbyist)",
+				"Android",
+				"Windows CE/Mobile/Phone/XPembedded",
+				"BlackBerry J2ME"
+			]
+		},
+
+		"Applications Software": {
+			"enabled": true,
+			"items": [
+				"Access",
+				"Adobe Illustrator",
+				"Adobe Photoshop",
+				"Beyond Compare",
+				"Excel",
+				"Outlook",
+				"Paint.Net",
+				"PowerPoint",
+				"Publisher",
+				"Word"
+			]
+		},
+
+		"Misc. Technologies": {
+			"enabled": true,
+			"items": {
+				"Visual Studio": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": false
+				},
+				"Visual Studio +Extensions": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": false,
+					"show_large": false,
+					"show_on_list": true
+				},
+				"Web Essentials": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Sublime Text": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": false
+				},
+				"Sublime Text +Plugins": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": false,
+					"show_large": false,
+					"show_on_list": true
+				},
+				"Eclipse": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Git": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Subversion": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Mercurial": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"CVS": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": false,
+					"show_large": false,
+					"show_on_list": true
+				},
+				"MSBuild": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"WIX": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"FxCop": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": false,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"StyleCop": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": false,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Batch": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"PowerShell": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Scripting & Automation": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Paint.NET": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Photoshop": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Illustrator": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": false,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"C/C++ (since 1989)": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": true,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Go": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": false,
+					"show_large": true,
+					"show_on_list": true
+				},
+				"Lua": {
+					"first_used": "",
+					"last_used": "",
+					"skill_level": 0,
+					"show_small": false,
+					"show_large": true,
+					"show_on_list": true
+				}
+			}
+		},
+
+		"Old stuff": {
+			"enabled": true,
+			"items": [
+				[
+					"Visual Basic 1 > 6",
+					"Classic ASP"
+				],
+				[
+					"Flash",
+					"ActionScript",
+					"Silverlight"
+				],
+				[
+					"Java",
+					"JSP",
+					"BlackBerry",
+					"J2ME"
+				],
+				[
+					"InstallShield ",
+					"NANT",
+					"Perl"
+				]
+			]
+		},
+
+		"HTML (since 1995)": {
+			"enabled": true,
+			"items": [
+				[
+					"HTML5",
+					"Bootstrap (Bootstrap.js)"
+				]
+			]
+		},
+
+		"CSS (since 1999)": {
+			"enabled": true,
+			"items": [
+				"CSS3",
+				"SASS",
+				"LESS"
+			]
+		},
+
+		"Frameworks": {
+			"enabled": true,
+			"items": [
+				[
+					"Sencha Ext JS (5 years)",
+					"Sencha Touch"
+				],
+				[
+					"Sencha Ext JS (5 years)",
+					"Sencha Touch"
+				]
+			]
+		},
+
+		"C# (since 2001)": {
+			"enabled": true,
+			"items": [
+				[
+					"ASP.NET WebForms",
+					"MVC (some)"
+				],
+				[
+					"WinForms"
+				],
+				[
+					"REST",
+					"WCF",
+					"Services",
+					"MEF"
+				]
+			]
+		},
+
+		"Python (since 2008)": {
+			"enabled": true,
+			"items": [
+				[
+					"I teach a middle-school class on Friday mornings, using http://inventwithpython.com"
+				]
+			]
+		}
+	},
+
+	"Education": {
+
+	}
+,
+
+	"Work History": {
+
+	}
 }
-
-
-
-
-
-
-
-
-
-
