@@ -114,7 +114,7 @@ BrainBench.com                          » C# · ASP.NET · HTML · CSS · Older
 
 — SunGard Expert Solutions (1.5 years/feb 2000-aug 2001) ——
  • Java · Swing · JSP · Servlets (some ASP)                • HTML · CSS · JavaScript · Source Safe · XP-Agile
- • Online & desktop financial calculators              • Web charting without JavaScript
+ • Online & desktop financial calculators                  • Web charting without JavaScript
 
  "These pages look stunning!" — Employee of New York Life, UI team, a customer of SunGard.
 
