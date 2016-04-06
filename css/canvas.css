@@ -1,41 +1,37 @@
 /* overrides */
-
 a {
   font-weight: 300;
   text-decoration: none;
   border-bottom: dotted 1px;
+  /*:active {
+  	font-weight: 300;
+  	text-decoration: none !important;
+  	border-bottom: solid 1px;
+  }*/
 }
-a:hover {
+a :hover {
   font-weight: 300;
   text-decoration: none;
   border-bottom: solid 1px;
 }
-/*a:active {
-  font-weight: 300;
-  text-decoration: none !important;
-  border-bottom: solid 1px;
-}*/
-
-a.bold {
+a .bold {
   font-weight: bold;
 }
-a.bold:hover {
+a .bold:hover {
   font-weight: bold;
 }
-
-a.boldhover {
+a .boldhover {
   font-weight: 300;
 }
-a.boldhover:hover {
+a .boldhover:hover {
   font-weight: bold;
 }
-
-a.white {
+a .white {
   color: white;
   text-decoration: none;
   border-bottom: 0px;
 }
-a.white:hover {
+a .white:hover {
   color: white;
   text-decoration: underline;
   border-bottom: 0px;
@@ -45,3 +41,79 @@ a.white:hover {
   color: #888;
 }
 
+#header_wrap .inner {
+  padding: 50px 10px 50px 10px;
+}
+
+#large_topics,
+#small_topics {
+  display: block;
+  clear: both;
+  margin: 0 -16px;
+}
+
+.topic {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+}
+
+#large_topics .topic {
+  width: 174px;
+  height: 230px;
+  margin: 20px;
+}
+
+#large_topics .topic img {
+  width: 170px;
+  height: 210px;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+#small_topics .topic {
+  width: 64px;
+  height: 64px;
+  margin: 20px;
+}
+
+#small_topics .topic img {
+  width: 64px;
+  height: 64px;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+.topic:hover img {
+  border: 1px solid #999;
+  box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  -moz-box-shadow: 0 0 5px #999;
+  -o-box-shadow: 0 0 5px #999;
+  -ms-box-shadow: 0 0 5px #999;
+}
+
+.topic div {
+  color: #777;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#large_topics .topic div {
+  font-size: 11pt;
+}
+
+#small_topics .topic div {
+  font-size: 10pt;
+}
+
+.topic:hover div {
+  color: #333;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}

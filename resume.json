@@ -31,81 +31,137 @@
 			"items": [
 				{
 					"name": "Batch files",
+					"experience_level": 9,
 					"since": "1988"
 				},
 				{
 					"name": "BASH",
-					"show_level": 2,
+					"experience_level": 4,
 					"since": "2010"
 				},
 				{
+					"name": "BASIC",
+					"experience_level": 8,
+					"since": "1981"
+				},
+				{
 					"name": "C#",
+					"experience_level": 8,
 					"since": "2001"
 				},
 				{
 					"name": "C/C++",
+					"experience_level": 7,
 					"since": "1989/1992"
 				},
 				{
 					"name": "CSS",
 					"expanded": "CSS/CSS3",
-					"since": "1999"
+					"experience_level": 8,
+					"since": "1999",
+					"subitems": [
+						{
+							"name": "Bootstrap"
+						},
+						{
+							"name": "LESS"
+						},
+						{
+							"name": "SASS/SCSS"
+						},
+						{
+							"name": "Foundation"
+						}
+					]
 				},
 				{
 					"name": "HTML",
 					"expanded": "HTML/HTML5",
+					"experience_level": 9,
 					"since": "1995",
-					"subitems": [ ]
+					"subitems": [
+						{
+							"name": "Sencha Ext JS"
+						},
+						{
+							"name": "Sencha Touch"
+						},
+						{
+							"name": "jQuery UI"
+						},
+						{
+							"name": "jQuery Mobile"
+						},
+						{
+							"name": "Foundation"
+						},
+						{
+							"name": "Foundation"
+						}
+					]
 				},
 				{
 					"name": "Java",
-					"show_level": 2,
+					"experience_level": 7,
 					"since": "2000",
 					"last_used": "2002",
 					"target_resume": "java"
 				},
 				{
 					"name": "JavaScript",
+					"experience_level": 9,
 					"since": "1997",
 					"subitems": [
 						{
-							"name": "Hand-coding"
+							"name": "Hand-coding",
+							"experience_level": 9
 						},
 						{
-							"name": "jQuery"
+							"name": "jQuery",
+							"experience_level": 7
 						},
 						{
-							"name": "Underscore"
+							"name": "Underscore",
+							"experience_level": 6
 						},
 						{
-							"name": "JSON"
+							"name": "JSON",
+							"experience_level": 8
 						},
 						{
-							"name": "Backbone.js"
+							"name": "Backbone.js",
+							"experience_level": 5
 						},
 						{
-							"name": "Angular.js"
+							"name": "Angular.js",
+							"experience_level": 3
 						},
 						{
-							"name": "Node.js"
+							"name": "Node.js",
+							"experience_level": 3
 						}
 					]
 				},
 				{
 					"name": "PowerShell",
+					"experience_level": 3,
 					"since": "2012"
 				},
 				{
 					"name": "SQL",
+					"experience_level": 7,
 					"since": "1999",
 					"expanded": "SQL/TSQL/PLSQL"
 				},
 				{
 					"name": "XAML",
-					"show_level": 2
+					"show_level": 2,
+					"experience_level": 2,
+					"since": "2004"
 				},
 				{
 					"name": "XML/XSLT",
+					"experience_level": 7,
 					"since": "2004"
 				}
 			]
@@ -118,28 +174,34 @@
 					"name": "Android"
 				},
 				{
-					"name": "ASP.NET"
-				},
-				{
 					"name": "MS/NUnit"
 				},
 				{
-					"name": "PHP"
+					"name": "PHP",
+					"show_level": 2
 				},
 				{
-					"name": "REST"
+					"name": "REST",
+					"expanded": "REST/SOAP"
 				},
 				{
 					"name": "Visual Studio"
 				},
 				{
-					"name": "Windows CE/Mobile/CE.net/XPembedded"
+					"name": "Windows CE/Mobile/CE.net/XPembedded",
+					"show_level": 2
 				},
 				{
-					"name": "Windows Phone 7"
+					"name": "Windows Phone 7/8",
+					"show_level": 2
 				},
 				{
-					"name": "Windows Desktop (7 and 8 + Metro)"
+					"name": "Windows Desktop (Win32)",
+					"show_level": 2
+				},
+				{
+					"name": "Windows RT",
+					"show_level": 2
 				}
 			]
 		},
@@ -148,10 +210,16 @@
 			"enabled": true,
 			"items": [
 				{
-					"name": "ASP.NET"
+					"name": "ASP.NET",
+					"experience_level": 8
+				},
+				{
+					"name": "ASP.NET MVC",
+					"experience_level": 5
 				},
 				{
 					"name": "BlackBerry",
+					"experience_level": 7,
 					"show_level": 2
 				},
 				{
@@ -199,10 +267,12 @@
 					"expanded": "Mercurial (hg)"
 				},
 				{
-					"name": "Team Foundation Server (TFS)"
+					"name": "TFS",
+					"expanded": "Team Foundation Server (TFS)"
 				},
 				{
-					"name": "Visual Source Safe (VSS)"
+					"name": "VSS",
+					"expanded": "Visual Source Safe (VSS)"
 				},
 				{
 					"name": "CVS"
@@ -581,8 +651,7 @@
 
 	"Education": {
 
-	}
-,
+	},
 
 	"Work History": {
 
