@@ -18,3 +18,4 @@ function addOnLoadEvent(func)
 		}
 	}
 }
+

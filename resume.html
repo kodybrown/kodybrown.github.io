@@ -1,186 +1,94 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="kodybrown.com : personal website">
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="description" content="kodybrown.com : personal website">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/canvas.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/resume.min.css">
 
-    <title>www.kodybrown.com — resume</title>
+	<title>kodybrown.com — resume</title>
 
-    <style>
-        #main_content {
-            margin-bottom: 24px;
-        }
-
-        #resume_ascii {
-            display: none;
-        }
-
-        #resume-menu {
-            margin-bottom: 18px;
-        }
-
-            #resume-menu span {
-                font-size: 8pt;
-                vertical-align: super;
-            }
-
-        .resume {
-        }
-
-            .resume a {
-                color: #222;
-            }
-
-        pre {
-            font-weight: 300;
-            line-height: 1.2;
-        }
-
-        pre, code {
-            font-family: Consolas, monospace;
-        }
-
-            pre b {
-                font-weight: bold;
-                text-transform: uppercase;
-            }
-
-            pre span.bold {
-                font-weight: bold;
-            }
-
-            pre span.italic {
-                font-style: italic;
-            }
-
-            pre span.smaller {
-                font-size: 8pt;
-            }
-
-            pre span.section {
-                font-weight: bold;
-                font-style: italic;
-                line-height: 1.3;
-            }
-
-            pre span.techlabel {
-                font-weight: bold;
-                font-style: italic;
-                line-height: 1.4;
-            }
-
-        #resume_intro {
-        }
-
-            #resume_intro img {
-                width: 99%;
-                background-color: #fff;
-                padding: 0;
-                margin: 0;
-            }
-
-        #header_wrap {
-            padding-top: 6px;
-        }
-
-            #header_wrap .inner {
-                padding: 0 10px 0;
-            }
-
-                #header_wrap .inner h2 {
-                    margin: 0;
-                }
-
-                #header_wrap .inner a.selected {
-                    text-decoration: underline;
-                }
-
-        #footer_wrap .inner {
-            padding: 0;
-        }
-
-        @media print {
-            .noprint {
-                display: none !important;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer noprint">
-        <header class="inner">
-            <h2 id="project_tagline"><a href="index.html" class="white" title="home">www.kodybrown.com</a> <span>»</span> <a href="resume.html" class="white selected">my resume</a></h2>
-        </header>
-    </div>
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer noprint">
+		<header class="inner">
+			<h2 id="project_tagline"><a href="index.html" class="white" title="home">kodybrown.com</a> <span>»</span> <a href="resume.html" class="white selected">my resume</a></h2>
+		</header>
+	</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-        <section id="main_content" class="inner">
+	<!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
 
-            <div id="resume-menu" class="noprint">
-                <a href="#intro" onclick="show_resume('intro')">cover</a> |
-                <a href="#default" onclick="show_resume('default')" title="standard resume">default</a> <span><a href="#" onclick="download_resume('default.doc')">(word)</a></span>
-            </div>
+			<div id="resume-menu" class="noprint">
+				<a href="#" onclick="download_resume('KodyBrown-Resume.pdf')" style="float:right; text-decoration:none; border:solid 0;" title="download my resume"><img src="images/download.png" border="0" align="middle" style="margin-right:10px;" /></a>
+				<a href="#intro" onclick="show_resume('intro')">cover</a> |
+				<a href="#default" onclick="show_resume('default')" title="standard resume">resume</a>
+			</div>
 
-            <div id="resume_intro" class="resume_section">
-                <iframe src="http://docs.google.com/gview?url=http://kodybrown.com/KodyBrown-Cover.pdf&embedded=true" style="width:900px; height:1100px;" frameborder="0"></iframe>
-            </div>
-            <div id="resume_default" class="resume_section">
-                <iframe src="http://docs.google.com/gview?url=http://kodybrown.com/KodyBrown-Resume.pdf&embedded=true" style="width:900px; height:1100px;" frameborder="0"></iframe>
-            </div>
+			<div id="resume_placeholder" class="resume_section" style="display:block; width:900px; height:1100px;">
 
-        </section>
-    </div>
+			</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer noprint">
-        <footer class="inner">
-            <p>Copyright &copy; 2001-2015 <a href="mailto:thewizard@wasatchwizard.com" style="text-decoration: none;">Kody Brown</a>. All Rights Reserved. Published with <a href="https://pages.github.com" style="text-decoration: none;">GitHub Pages</a>.</p>
-            <!--<p>What happened to my Raspberry Pi? It is great, however my home power/internet is not so reliable.</p>-->
-        </footer>
-    </div>
+			<div id="resume_intro" class="resume_section">
+				<iframe src="http://docs.google.com/gview?url=http://kodybrown.com/KodyBrown-Cover.pdf&embedded=true" style="width:900px; height:1100px;" frameborder="0"></iframe>
+			</div>
 
-    <script>
-        function show_resume(resume_name) {
-            var el = document.getElementById("resume_" + resume_name),
-                els = document.getElementsByClassName("resume_section");
-            for (var i = 0; i < els.length; i++) {
-                if (els[i].id != el.id) {
-                    els[i].style.display = "none";
-                }
-            }
-            el.style.display = "block";
-        }
+			<div id="resume_default" class="resume_section">
+				<iframe src="http://docs.google.com/gview?url=http://kodybrown.com/KodyBrown-Resume.pdf&embedded=true" style="width:900px; height:1100px;" frameborder="0"></iframe>
+			</div>
 
-        function download_resume(resume_name) {
-            window.location.href = "resume_" + resume_name;
-        }
-    </script>
+		</section>
+	</div>
 
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        try {
-            var pageTracker = _gat._getTracker("UA-305845-4");
-            pageTracker._trackPageview();
-        } catch (err) { }
-    </script>
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer noprint">
+		<footer class="inner">
+			<p>Copyright &copy; 2001-2015 <a href="mailto:thewizard@wasatchwizard.com" style="text-decoration: none;">Kody Brown</a>. All Rights Reserved. Published with <a href="https://pages.github.com" style="text-decoration: none;">GitHub Pages</a>.</p>
+			<!--<p>What happened to my Raspberry Pi? It is great, however my home power/internet is not so reliable.</p>-->
+		</footer>
+	</div>
 
-    <script src="js/main.js"></script>
-    <script>
-        addOnLoadEvent(function() {
-            show_resume('intro');
-        });
-    </script>
+	<script>
+		function show_resume(resume_name) {
+			var el = document.getElementById("resume_" + resume_name),
+					els = document.getElementsByClassName("resume_section");
+			for (var i = 0; i < els.length; i++) {
+				if (els[i].id != el.id) {
+					els[i].style.display = "none";
+				}
+			}
+			el.style.display = "block";
+		}
+
+		function download_resume(resume_name) {
+			window.location.href = "" + resume_name;
+		}
+	</script>
+
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-305845-4");
+			pageTracker._trackPageview();
+		} catch (err) { }
+	</script>
+
+	<script src="js/main.js"></script>
+	<script>
+		addOnLoadEvent(function() {
+			show_resume('intro');
+		});
+	</script>
 
 </body>
 </html>
+
