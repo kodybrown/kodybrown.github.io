@@ -1,8 +1,13 @@
 ﻿
-@import 'slate';
-@import 'canvas';
+/*@import 'slate';*/
+/*@import 'canvas';*/
 
-body, p, div, span, td, a {
-    font-family: 'Exo 2', sans-serif;
+@import 'theme/poole';
+@import 'theme/syntax';
+@import 'theme/hyde';
+@import 'theme';
+
+html, body, p, div, span, td, a, h1, h2, h3, h4, h5, h6, h7 {
+	text-rendering: optimizeLegibility;
+	font-family: 'Exo 2', sans-serif;
 }
-
