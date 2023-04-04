@@ -1,12 +1,9 @@
-WebApp/Pulse/package-lock.json
+package-lock.json
 
 webapi.enc.conf
 webapi.*.conf.unencrypted
 dump.rdb
 
-Published/
-
-commit-message.txt
 
 ### VisualStudio
 
@@ -41,20 +38,11 @@ bld/
 
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
-# WebApp/Pulse/wwwroot/vendor/css/*.css	
-# WebApp/Pulse/wwwroot/vendor/libs/*.css	
-# !WebApp/Pulse/wwwroot/vendor/libs/*.js	
 *.min.*	
 *.es5.js
 *.es5.min.js
 *.min.css
 *.css
-!WebApp/Pulse/wwwroot/vendor/fonts/pulse-icons.css
-!WebApp/Pulse/wwwroot/vendor/fonts/fontawesome.css
-!WebApp/Pulse/wwwroot/vendor/fonts/ionicons.css
-!WebApp/Pulse/wwwroot/vendor/fonts/linearicons.css
-!WebApp/Pulse/wwwroot/vendor/fonts/open-iconic.css
-!WebApp/Pulse/wwwroot/vendor/fonts/pe-icon-7-stroke.css
 
 # MSTest test Results
 [Tt]est[Rr]esult*/

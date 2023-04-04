@@ -5,8 +5,8 @@
   "compileOnSave": true,
   // Will autoprefixer. It can be run faster when turn off. default true
   "autoPrefixer": true,
-  // Output style. default compressed。
+  // Output style. default compressed.
   "output": "compressed",
-  // The RegExp of path what you can to ignore (the var.scss file will never be compiled)。
+  // The RegExp of path what you can to ignore (the var.scss file will never be compiled).
   "exclude": []
 }
