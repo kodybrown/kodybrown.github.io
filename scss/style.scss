@@ -1,13 +1,7 @@
 ﻿// https://code.visualstudio.com/Docs/languages/CSS
 
-@import 'slate';
-@import 'canvas';
+@import "normalize";
+// @import "boilerplate";
 
-body,
-p,
-div,
-span,
-td,
-a {
-  font-family: 'Biome', 'Exo 2', sans-serif;
-}
+@import "variables";
+@import "canvas";
