@@ -3,125 +3,224 @@
 <!--[if IE 7]>         <html ng-app="app" lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html ng-app="app" lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html ng-app="app" lang="en" class="no-js">
+<html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
 	<meta charset="utf-8" />
+	<title>kodybrown.com - home</title>
+	<meta name="description" content="kodybrown.com - Personal website of Kody Brown" />
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>kodybrown.com - home</title>
-	<meta name="description" content="kodybrown.com : personal website" />
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
 
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="manifest" href="site.webmanifest">
 
-	<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2:400,300,600,500"> -->
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="apple-touch-icon" href="icon.png">
+	<link rel="shortcut icon" href="./favicon.ico">
+
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600|Domine"> -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:300,400,500,700|Dosis:300,400,500,700">
+
+	<link rel="stylesheet" type="text/css" href="./css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css">
 </head>
 
 <body class="home-page">
 
 	<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <![endif]-->
 
 	<!-- HEADER -->
-	<div data-include="header"></div>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="/">kodybrown.com</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li>&nbsp;</li>
+				</ul>
+				<ul class="navbar-nav Xmr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#./timeline.html">Timeline</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./resume_cover.html">Resume</a>
+					</li>
+				</ul>
+				<!-- <form class="form-inline mt-2 mt-md-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form> -->
+				<!-- <span class="navbar-text">
+					Navbar text with an inline element
+				</span> -->
+			</div>
+		</div>
+	</nav>
+
+	<div class="clear" style="height:88px;">&nbsp;</div>
 
 	<!-- MAIN CONTENT -->
-	<div id="main_content_wrap" class="outer">
-		<section id="main_content" class="inner">
+	<main role="main" class="container">
+		<div class="jumbotron">
+			<h1>Welcome to my website</h1>
+			<p class="lead" style="width:75%;">Thanks for stopping by. Here you will find some useful and some not-so-useful links and information about me and my life.</p>
+			<a class="btn btn-lg btn-primary" href="./resume_cover.html" role="button">View my resume &raquo;</a>
+		</div>
+	</main>
 
-			<div id="large_topics">
-				<!-- <div id="goto_blog" class="topic" title="my blog">
-					<a href="http://elegantdevelopment.blogspot.com" target="_blank" disabled>
-						<img src="images/.png" /><div>my blog</div>
-					</a>
-				</div> -->
+	<div class="container">
+		<p>
+			I am not the polygamist, Kody Brown. Sorry, not me. 😉
+		</p>
 
-				<div id="goto_resume" class="topic" title="my resume">
-					<a href="resume.html">
-						<img src="images/wordle_8.png" style="background-color: #fff;" />
-						<div>my resume</div>
-					</a>
-				</div>
-			</div>
+		<h3>
+			Personal Links
+		</h3>
+		<ul>
+			<li><a href="./resume_cover.html">my resume</a> — my online resume.</li>
+			<li><a href="https://elegantdevelopment.blogspot.com/">my blog</a> — my public blog where I post semi-frequently, on-and-off.</li>
+			<li><a href="https://www.wasatchwizard.com/">my alter ego</a> — my alter ego has his own web-site.</li>
+			<br />
+			<li><a href="https://lds.org/">lds.org</a> — the Church of Jesus Christ of Latter-Day Saints.</li>
+			<li><a href="#./testimony.html">my testimony</a> — my testimony of Jesus Christ (coming soon).</li>
+			<li><a href="#./timeline.html">personal history</a> — my personal history & timeline (coming soon).</li>
+		</ul>
 
-			<!-- <div style="clear: both;"></div> -->
+		<!-- <li>
+			<a href="http://minecraft.net" target="_blank" title="minecraft.net">
+				<img src="images/minecraft.png" />
+				Minecraft
+			</a>
+		</li> -->
+		<!-- <li>
+			<a href="http://wasatchwizard.homedns.org/minecraft-server.php" target="_blank" title="my minecraft server">
+				<img src="images/minecraft_server.png" />
+				My Minecraft Server
+			</a>
+		</li> -->
+	</div>
 
-			<div id="small_topics">
+	<div class="container">
+		<h3>
+			Online Profiles
+		</h3>
+		<ul class="external-profiles">
+			<li>
+				<a href="https://stackoverflow.com/users/139793/kodybrown" target="_blank" title="Click to go to my Stack Overflow profile">
+					<!-- <img src="images/stackoverflow_logo.png" /> -->
+					Stack Overflow
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/kodybrown" target="_blank" title="Click to go to my GitHub profile">
+					<!-- <img src="images/github_logo.png" /> -->
+					GitHub
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/kodybrown" target="_blank" title="Click to go to my LinkedIn profile">
+					<!-- <img src="images/linkedin_logo.png" /> -->
+					LinkedIn
+				</a>
+			</li>
+			<!-- <li>
+				<a href="http://utahveteranscourt.org" target="_blank" title="Utah Veteran's Court">
+					<img src="images/statue_of_liberty.jpg" />
+					United States Veterans
+				</a>
+			</li> -->
+		</ul>
 
-				<div id="goto_stackoverflow" class="topic" title="stackoverflow profile">
-					<a href="https://stackoverflow.com/users/139793/kodybrown" target="_blank">
-						<img src="images/stackoverflow_logo.png" />
-						<div>stack overflow</div>
-					</a>
-				</div>
+	</div>
 
-				<div id="goto_github" class="topic" title="github profile">
-					<a href="https://github.com/kodybrown" target="_blank">
-						<img src="images/github_logo.png" />
-						<div>github</span></div>
-					</a>
-				</div>
+	<div class="container">
+		<h3>
+			Professional Links
+		</h3>
 
-				<div id="goto_linkedin" class="topic" title="linkedin profile">
-					<a href="https://www.linkedin.com/in/kodybrown" target="_blank">
-						<img src="images/linkedin_logo.png" />
-						<div>linkedin</div>
-					</a>
-				</div>
+		<!-- <p>
+			I have started a new company that provides data gathering, storage, and management. Primarily focusing on providing real-time usage reporting and visualizations to drive change.
+		</p>
+		<ul>
+			<li><a href="http://www.bricksoft.com">bricksoft.com</a> — data management and visualizations providing amazing and informative insights.</li>
+		</ul> -->
 
-				<div id="goto_essentialcsharp" class="topic" title="essential c# by mark michaelis">
-					<a href="https://github.com/IntelliTect/EssentialCSharp/tree/master" target="_blank">
-						<img src="images/essentialcsharp_thumb.png" />
-						<div>essential c#</div>
-					</a>
-				</div>
+		<!-- <li>
+			<a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=8275895.PN.&OS=PN/8275895&RS=PN/8275895" target="_blank" title="secure dhcp extensions patent">
+				<img src="images/uspto.png" />
+				US Patent
+			</a>
+		</li> -->
 
-				<!-- <div id="goto_patent" class="topic" title="secure dhcp extensions patent">
-					<a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=8275895.PN.&OS=PN/8275895&RS=PN/8275895" target="_blank">
-						<img src="images/uspto.png" />
-						<div>patent</div>
-					</a>
-				</div> -->
+		<p>
+			I co-founded Vutility, Inc. in 2016. I also helped create the <a href="https://vutility.com/hotdrop">HotDrop</a>, which is a pretty amazing wireless, battery-less, power monitoring sensor.
+		</p>
+		<ul>
+			<li><a href="https://vutility.com">vutility.com</a> — Vutility's multi-patented, award-winning IoT and cloud-enabled technologies are transforming the energy monitoring landscape..</li>
+			<li><a href="http://www.venafi.com">venafi.com</a> — Machine Identity Management: Accelerate cloud native development and prevent application outages or security breaches with effective machine identity management.</li>
+			<li><a href="http://www.onegreatfamily.com">onegreatfamily.com</a> — OGF is a single, shared family tree built by people all over the world.</li>
+			<li><a href="http://www.landesk.com">landesk.com</a> (now Ivanti) — Ivanti finds, heals and protects every device, everywhere - automatically. I helped create the Handheld Manager (LDHM), Lenovo ThinkVantage Tools integration, and the Message-based SDK (MBSDK) products.</li>
+		</ul>
 
-				<!-- <div id="goto_utahveteranscourt" class="topic" title="Utah Veteran's Court">
-					<a href="http://utahveteranscourt.org" target="_blank">
-						<img src="images/statue_of_liberty.jpg" />
-						<div>united states veterans</div>
-					</a>
-				</div> -->
+		<ul>
+			<li>
+				<a href="https://github.com/IntelliTect/EssentialCSharp/tree/v11.0" target="_blank" title="Click to go to Essential C# by Mark Michaelis">Essential C#</a> — The best book on C#. (I was technical reviewer for a few versions of it.)
+			</li>
+		</ul>
 
-				<!-- <div id="goto_minecraft" class="topic" title="minecraft.net">
-          <a href="http://minecraft.net" target="_blank">
-            <img src="images/minecraft.png" />
-            <div>minecraft</div>
-          </a>
-        </div> -->
+		<!-- <h3>
+			Project Links
+		</h3>
+		<p>
+			So, what does one do when they don't sleep much? Too bad, I have attention span problems, I might be able to actually finish some of my long-term projects.
+		</p>
+		<ul>
+			<li><a href="http://www.swiftrivermarketing.com">Swift River Marketing</a> — A great friend of mine who is a total stud at sales &amp; marketing.</li>
+			<li><a href="http://www.grundlesoftware.com">GrundleSoftware.com</a> — excellent and highly rated Pocket PC and Windows Mobile software.</li>
+			<li><a href="http://www.basgetti.com">Basgetti.com</a> — office tools and productivity applications for the power user.</li>
+			<li><a href="http://www.softwareforfamilies.com">SoftwareForFamilies.com</a> — home of PcMaster and Whitelist and other family friendly software.</li>
+			<li><a href="http://www.syntheticism.com">Syntheticism.com</a> — my work with artificial intelligence and my life-long project <b>Michael<i>One</i></b>.</li>
+		</ul> -->
 
-				<!-- <div id="goto_wasatchwizard_minecraft" class="topic" title="my minecraft server">
-          <a href="http://wasatchwizard.homedns.org/minecraft-server.php" target="_blank">
-            <img src="images/minecraft_server.png" />
-            <div>my&nbsp;server</div>
-          </a>
-        </div> -->
-
-			</div>
-
-			<p class="noprint">&nbsp;</p>
-
-			<p class="noprint">&nbsp;</p>
-
-		</section>
+		<!-- <h3>
+			Some Friends
+		</h3>
+		<p>
+			Here are some of my friend's web-sites. Check them out. They are cool.
+		</p>
+		<ul>
+			<li><a href="http://www.neslosoftware.com">NesloSoftware.com</a> - Desktop Rover; an absolutely invaluable tool for anyone using more than one computer.</li>
+			<li><a href="http://www.themoshpit.com">theMOSHpit.com</a> - mosh's web-site aptly names themoshpit.com.</li>
+			<li><a href="http://larryraab.googlepages.com/home">Larry's page</a></li>
+			<li><a href="http://www.ryanoffski.com">Ryanoffski.com</a> - my little brother who is so smart he's attending Neumont University. He has already created a cool open source application called <a href="http://sourceforge.net/projects/nutalk">NuTalk</a>.</li>
+		</ul> -->
 	</div>
 
 	<!-- FOOTER  -->
-	<div data-include="footer"></div>
+	<div id="footer" class="container">
+		<footer>
+			<p>Copyright &copy; 2001-2023 <a href="mailto:kody@kodybrown.com" style="text-decoration: none;">Kody Brown</a>. All Rights Reserved. Published with <a href="https://pages.github.com" style="text-decoration: none;">GitHub Pages</a>.</p>
+			<!--<p>What happened to my Raspberry Pi? It is great, however my home power/internet is not so reliable.</p>-->
+		</footer>
+	</div>
 
-	<script src="/js/jquery.min.js"></script>
-	<script src="/js/main.min.js"></script>
+	<script src="./js/vendor/jquery.min.js"></script>
+	<!-- <script src="./js/vendor/modernizr.min.js"></script> -->
+	<script src="./js/vendor/bootstrap.bundle.min.js"></script>
+	<!-- <script src="./js/main.min.js"></script> -->
 
 </body>
 </html>

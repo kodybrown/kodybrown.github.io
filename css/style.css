@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -353,6 +354,11 @@ a .boldhover:hover {
   font-weight: bold;
 }
 
+ul {
+  padding-left: 26px;
+  list-style-type: "»  ";
+}
+
 .btn-lg {
   font-family: "PT Serif", serif;
   text-transform: lowercase;
@@ -411,4 +417,9 @@ footer p {
 
 #resume-link :hover {
   border-bottom: solid 0px;
+}
+
+.external-profiles li a img {
+  height: 32px;
+  margin: 0 4px 0 0;
 }/*# sourceMappingURL=style.css.map */

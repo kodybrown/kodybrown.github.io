@@ -59,6 +59,22 @@ a {
 	}
 }
 
+ul {
+	padding-left: 26px;
+
+	// list-style-type: disc;
+	// list-style-type: circle;
+	// list-style-type: square;
+	// list-style-type: decimal;
+	// list-style-type: "•  ";
+	// list-style-type: "—  ";
+	list-style-type: "»  ";
+
+	// list-style: inside;
+	// list-style: georgian inside;
+	// list-style: lower-roman url("../img/shape.png") outside;
+}
+
 .btn-lg {
 	font-family: "PT Serif", serif;
 	text-transform: lowercase;
@@ -134,5 +150,17 @@ footer {
 #resume-link {
 	:hover {
 		border-bottom: solid 0px;
+	}
+}
+
+.external-profiles {
+	li {
+		a {
+			img {
+				// width: 32px;
+				height: 32px;
+				margin: 0 4px 0 0;
+			}
+		}
 	}
 }
