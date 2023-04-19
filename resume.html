@@ -1,90 +1,9 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7]>      <html ng-app="app" lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html ng-app="app" lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html ng-app="app" lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html ng-app="app" lang="en" class="no-js">
-<!--<![endif]-->
-
+<html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<title>kodybrown.com - resume</title>
-	<meta name="description" content="kodybrown.com : personal website" />
-
-	<link rel="shortcut icon" href="/favicon.ico">
-
-	<link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/resume.min.css">
+	<meta http-equiv="refresh" content="0; url=./resume_cover.html" />
 </head>
-
-<body class="resume-page">
-
-	<!--[if lt IE 7]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
-
-	<!-- HEADER -->
-	<div data-include="header"></div>
-
-	<!-- MAIN CONTENT -->
-	<div id="main_content_wrap" class="outer">
-		<section id="main_content" class="inner">
-
-			<div id="resume-menu" class="noprint">
-				<a href="#" onclick="download_resume('KodyBrown-Resume.pdf')" style="float:right; text-decoration:none; border:solid 0;" title="download my resume"><img src="images/download.png" border="0" align="middle" style="margin-right:10px;" /></a>
-				<a href="#intro" onclick="show_resume('intro')">cover</a> |
-				<a href="#default" onclick="show_resume('default')" title="standard resume">resume</a>
-			</div>
-
-			<div id="resume_placeholder" class="resume_section" style="display:block; width:900px; height:1100px;">
-
-			</div>
-
-			<div id="resume_intro" class="resume_section">
-				<img src="KodyBrown-Cover.png" width="900" />
-				<!-- <iframe src="https://docs.google.com/gview?url=http://kodybrown.com/KodyBrown-Cover.pdf&embedded=true" style="width:900px; height:1100px;" frameborder="0"></iframe> -->
-			</div>
-
-			<div id="resume_default" class="resume_section">
-				<img src="KodyBrown-Resume.png" width="900" />
-				<!-- <iframe src="https://docs.google.com/gview?url=http://kodybrown.com/KodyBrown-Resume.pdf&embedded=true" style="width:900px; height:1100px;" frameborder="0"></iframe> -->
-			</div>
-
-		</section>
-	</div>
-
-	<!-- FOOTER  -->
-	<div data-include="footer"></div>
-
-	<script>
-		function show_resume(resume_name) {
-			var el = document.getElementById("resume_" + resume_name);
-			var els = document.getElementsByClassName("resume_section");
-			for (var i = 0; i < els.length; i++) {
-				if (els[i].id != el.id) {
-					els[i].style.display = "none";
-				}
-			}
-			el.style.display = "block";
-		}
-
-		function download_resume(resume_name) {
-			window.location.href = "" + resume_name;
-		}
-
-	</script>
-
-	<script src="/js/jquery.min.js"></script>
-	<script src="/js/main.min.js"></script>
-	<script>
-		addOnLoadEvent(function() {
-			show_resume('intro');
-		});
-	</script>
-
+<body>
+	This is a redirect page. If you can see this please click <a href="./resume_cover.html">here</a>.
 </body>
-
 </html>
