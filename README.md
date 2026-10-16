@@ -23,9 +23,19 @@ committed versions remain available in Git history.
 
 ## Favicon artwork
 
-`images/favicon-master.png` is the 512-pixel master for the face on a slate circle.
-The original hand-drawn artwork remains in `favicon.pdn`. The ICO, PNG, Apple touch
-icon, and legacy Windows tile images all use the same updated artwork.
+The browser favicon uses the hand-edited `favicon16.png`, `favicon24.png`,
+`favicon32.png`, and `favicon64.png`. Each PNG supplies its own size inside
+`favicon.ico` without resizing. Both pages also link directly to `favicon64.png`.
+
+To rebuild the ICO from those four drawings:
+
+```powershell
+magick favicon16.png favicon24.png favicon32.png favicon64.png favicon.ico
+```
+
+`images/favicon-master.png` is the earlier 512-pixel artwork still used for the
+Apple touch icon and legacy Windows tile images. It is superseded by the
+hand-edited PNGs for browser favicons.
 
 The master was edited using the built-in ImageGen tool, then downscaled and
 converted with ImageMagick. The edit prompt was:
@@ -44,11 +54,9 @@ converted with ImageMagick. The edit prompt was:
 > The face must stay recognizable as the exact supplied drawing. Output one
 > square PNG master.
 
-To export the browser assets again after updating the master:
+To export the touch and tile assets again after updating that earlier master:
 
 ```powershell
-magick images/favicon-master.png -resize 64x64 -strip favicon.png
-magick images/favicon-master.png -define icon:auto-resize=64,48,32,24,16 favicon.ico
 magick images/favicon-master.png -resize 192x192 -strip icon.png
 magick images/favicon-master.png -resize 180x180 -strip apple-touch-icon.png
 magick images/favicon-master.png -resize 558x558 -strip tile.png

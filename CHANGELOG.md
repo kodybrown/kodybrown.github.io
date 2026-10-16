@@ -2,6 +2,9 @@
 
 ## 2026-10-16
 
+- Rebuilt `favicon.ico` from the supplied, hand-edited 16-, 24-, 32-, and
+  64-pixel PNGs, verifying exact RGBA pixel matches for all four embedded sizes.
+  Pointed both pages' PNG favicon links at the corrected `favicon64.png`.
 - Added a matching local SVG email icon linking to `kody@kodybrown.com`. Ordered
   both headers as Email, Stack Overflow, GitHub, LinkedIn, and X, with the lower
   contact links following the same order.
