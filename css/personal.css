@@ -1,0 +1,267 @@
+/* Hand-authored styles for the two personal pages; no build step is required. */
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #292d31;
+  background: #fff;
+  line-height: 1.65;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #245d87;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: #163d5a;
+}
+
+:focus-visible {
+  outline: 3px solid #245d87;
+  outline-offset: 4px;
+}
+
+.container {
+  width: min(100% - 3rem, 68rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  background: #343a40;
+  padding-block: 0.5rem 0.65rem;
+}
+
+.site-name {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  text-decoration: none;
+}
+
+.site-name:hover {
+  color: #fff;
+}
+
+.site-header :focus-visible {
+  outline-color: #fff;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 1;
+  padding: 0.65rem 1rem;
+  color: #fff;
+  background: #163d5a;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Preserve the original résumé's bordered tabs as simple two-page navigation. */
+.page-nav {
+  margin-top: 1.75rem;
+}
+
+.page-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #d8dde1;
+  list-style: none;
+}
+
+.page-nav li {
+  margin-bottom: -1px;
+}
+
+.page-nav a {
+  display: block;
+  padding: 0.55rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-decoration: none;
+}
+
+.page-nav a:hover {
+  background: #f5f6f7;
+}
+
+.page-nav a[aria-current="page"] {
+  color: #292d31;
+  background: #fff;
+  border-color: #d8dde1 #d8dde1 #fff;
+}
+
+main {
+  padding-top: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.25;
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+h1 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.55rem;
+}
+
+h3 {
+  margin: 1.25rem 0 0.3rem;
+  font-size: 1.15rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.home-content > p,
+.home-content section,
+.resume-document {
+  max-width: 72ch;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #515961;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+.aside,
+.site-footer,
+.resume-contact {
+  color: #59616a;
+}
+
+.aside {
+  font-size: 0.925rem;
+}
+
+.elsewhere h3 a {
+  font-weight: 600;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-links a {
+  display: inline-block;
+  padding-block: 0.4rem;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #e4e7e9;
+  font-size: 0.85rem;
+}
+
+.resume-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.resume-heading p {
+  margin: 0;
+}
+
+.resume-document h3 {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.resume-document ul {
+  padding-left: 1.4rem;
+}
+
+.resume-document li + li {
+  margin-top: 0.4rem;
+}
+
+.resume-contact a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 35rem) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+
+  .page-nav {
+    margin-top: 1.25rem;
+  }
+
+  main {
+    padding-top: 1.5rem;
+  }
+}
+
+@media print {
+  /* Print the résumé itself; the downloadable PDF remains a separate option. */
+  .site-header, .page-nav, .skip-link, .site-footer, .resume-heading {
+    display: none;
+  }
+
+  :root {
+    color: #000;
+    font-size: 10pt;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .resume-document {
+    max-width: none;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  h2, h3 {
+    break-after: avoid;
+  }
+
+  section {
+    margin-top: 1rem;
+  }
+}
