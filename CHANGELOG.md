@@ -12,6 +12,16 @@
 
 ## 2026-10-15
 
+- Removed 70 unused legacy assets and build files, retaining the active
+  stylesheet, editable source artwork, current PDF, and old résumé redirects.
+- Unified browser, Apple, and Windows icons around the hand-drawn face on a
+  slate circle. Added a shared PNG master and documented its edit and exports.
+- Hardened `publish.bat` with checkout and branch checks, reliable quoted and
+  unquoted commit messages, nonzero error exits, and explicit pushes without
+  automatic pulls. Verified 12 publishing scenarios using disposable local
+  repositories, including rejected pushes and commit failures.
+- Included the updated hobbies and faith wording on the home page. Checked
+  local references, favicon formats, browser rendering, and Git whitespace.
 - Added local SVG links for X, GitHub, Stack Overflow, and LinkedIn to the top
   right of both page headers, retaining the labeled contact links below. Checked
   icon loading, accessible names, keyboard focus, 44-pixel link targets, and

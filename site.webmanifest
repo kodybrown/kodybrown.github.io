@@ -1,12 +1,16 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "Kody Brown",
+  "name": "Kody Brown",
   "icons": [ {
       "src": "icon.png",
       "type": "image/png",
       "sizes": "192x192"
+    }, {
+      "src": "images/favicon-master.png",
+      "type": "image/png",
+      "sizes": "512x512"
     } ],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#343a40"
 }
