@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Moved "Things I make and share" after "Professional background" as the final
+  home page section. Verified the section order and Git whitespace checks.
 - Removed the home page's duplicate "Find me" section and its unused CSS,
   retaining the existing header contact icons. Verified unchanged header
   markup, browser rendering, and Git whitespace checks.
