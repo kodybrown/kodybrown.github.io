@@ -21,6 +21,43 @@ or build step. Edit the HTML and `css/personal.css` directly. The retired Sass,
 Bootstrap, JavaScript, and build configuration files have been removed; their
 committed versions remain available in Git history.
 
+## Site direction and future plans
+
+The current Home and Résumé site meets its intended scope: a small personal
+introduction, professional background, and links to the other sites. Keep it
+low-maintenance, with occasional résumé updates. The generator choices below
+are future plans; this checkout currently remains plain HTML and CSS.
+
+| Site | Purpose | Planned generator |
+| --- | --- | --- |
+| kodybrown.com | Personal information, résumé, and links; a future personal blog for nontechnical writing | Eleventy when adding the blog |
+| wasatchwizard.com | Technical writing, experiments, snippets, and tinkering | Eleventy, replacing the Blogger blog |
+| weekendtech.net | A browsable catalog of usable freeware and open-source releases, with summaries, screenshots, downloads, and GitHub links | Astro |
+
+### Markdown publishing
+
+- Store posts and project descriptions as Markdown with front matter for their
+  titles, dates, summaries, and other metadata.
+- Allow authoring directly in the repository through GitHub's web editor.
+  Configure GitHub Actions to build and publish static HTML after a publishing
+  commit, so readers do not need JavaScript to render Markdown.
+- Generate post lists and archives from content files instead of maintaining a
+  separate master list. Include an RSS feed for each blog.
+- Keep interactive catalog search and filtering on WeekendTech compatible with
+  static hosting; Astro can add Vue components where useful.
+- Give most original GitHub projects a short write-up and screenshot: usable
+  releases belong on WeekendTech; experiments and snippets belong on Wasatch
+  Wizard. Link between related entries rather than duplicating the write-ups.
+
+### Wasatch Wizard blog migration
+
+The existing Wasatch Wizard source links to
+[Elegant Development on Blogger](https://elegantdevelopment.blogspot.com/).
+Plan to bring that technical blog into Wasatch Wizard using Eleventy. Before
+switching links, export and review the existing posts, preserve their dates and
+images, and map old post URLs to their new destinations. Verify what redirects
+or notices the old Blogger site can support so existing links remain useful.
+
 ## Favicon artwork
 
 The browser favicon uses the hand-edited `favicon16.png`, `favicon24.png`,

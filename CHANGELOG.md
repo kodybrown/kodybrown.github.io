@@ -2,6 +2,10 @@
 
 ## 2026-10-16
 
+- Recorded the three sites' roles and future generator choices in the README:
+  Eleventy for a personal blog and Wasatch Wizard's Blogger replacement, and
+  Astro for WeekendTech. Documented Markdown/GitHub publishing and migration
+  considerations; checked the existing Blogger destination and Markdown diff.
 - Regenerated every remaining favicon, manifest, Apple touch, and Windows tile
   PNG from the hand-edited `favicon64.png`, preserving pixel edges with
   nearest-neighbor scaling. Updated the rebuild instructions and verified
