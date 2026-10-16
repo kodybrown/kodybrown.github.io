@@ -202,6 +202,31 @@ section {
   margin: 0;
 }
 
+.resume-pdf {
+  display: block;
+  width: 100%;
+  height: 76vh;
+  min-height: 28rem;
+  border: 1px solid #d8dde1;
+}
+
+.resume-text {
+  margin-top: 1.5rem;
+}
+
+.resume-text summary {
+  width: fit-content;
+  padding-block: 0.5rem;
+  color: #245d87;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+.resume-text[open] .resume-document {
+  margin-top: 1rem;
+}
+
 .resume-document h3 {
   font-family: inherit;
   font-size: 1rem;
@@ -235,9 +260,14 @@ section {
 }
 
 @media print {
-  /* Print the résumé itself; the downloadable PDF remains a separate option. */
-  .site-header, .page-nav, .skip-link, .site-footer, .resume-heading {
+  /* Print readable text, even when the screen's text disclosure is closed. */
+  .site-header, .page-nav, .skip-link, .site-footer, .resume-heading,
+  .resume-pdf, .resume-text > summary {
     display: none;
+  }
+
+  .resume-text::details-content {
+    content-visibility: visible;
   }
 
   :root {

@@ -6,8 +6,9 @@ A small, static personal website, hosted on GitHub Pages at
 ## Editing
 
 - `index.html` is the personal introduction and links to my other sites.
-- `resume.html` is the readable HTML résumé; update it together with
-  `KodyBrown-Resume.pdf` when changing résumé content.
+- `resume.html` embeds `KodyBrown-Resume.pdf` in the page using the browser's
+  native PDF viewer. It also includes an expandable HTML text version; update
+  both versions together when changing résumé content.
 - `css/personal.css` is the hand-authored stylesheet used by both pages.
 - `resume_cover.html` and `resume_print.html` forward existing bookmarks to
   `resume.html`; Home and Résumé are the only content pages in the navigation.
@@ -35,9 +36,11 @@ git diff --check
 ```
 
 Also check both pages at desktop and narrow mobile widths, follow the Home and
-Résumé tabs, verify the PDF link and old résumé URLs, and use Tab to check the
-skip link and visible focus. All content and navigation should work with
-JavaScript disabled.
+Résumé tabs, verify the embedded PDF and its download link, open the text
+version, check the old résumé URLs, and use Tab to check the skip link and
+visible focus. The text version and navigation work without site JavaScript;
+embedded PDF support depends on the browser's native viewer. The download and
+text version remain available when embedding is unsupported.
 
 ## Publishing
 
