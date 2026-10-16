@@ -2,6 +2,10 @@
 
 ## 2026-10-16
 
+- Regenerated every remaining favicon, manifest, Apple touch, and Windows tile
+  PNG from the hand-edited `favicon64.png`, preserving pixel edges with
+  nearest-neighbor scaling. Updated the rebuild instructions and verified
+  image pixels, sizes, transparency, and all declared icon references.
 - Rebuilt `favicon.ico` from the supplied, hand-edited 16-, 24-, 32-, and
   64-pixel PNGs, verifying exact RGBA pixel matches for all four embedded sizes.
   Pointed both pages' PNG favicon links at the corrected `favicon64.png`.

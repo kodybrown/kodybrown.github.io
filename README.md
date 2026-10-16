@@ -33,34 +33,20 @@ To rebuild the ICO from those four drawings:
 magick favicon16.png favicon24.png favicon32.png favicon64.png favicon.ico
 ```
 
-`images/favicon-master.png` is the earlier 512-pixel artwork still used for the
-Apple touch icon and legacy Windows tile images. It is superseded by the
-hand-edited PNGs for browser favicons.
+All other icon images derive from `favicon64.png`. `favicon.png` is an identical
+copy; the larger icons use nearest-neighbor scaling to preserve the drawing's
+pixel edges and colors. `images/favicon-master.png` is a 512-pixel export for the
+manifest, not an independent source drawing. Edit the hand-drawn PNGs first.
 
-The master was edited using the built-in ImageGen tool, then downscaled and
-converted with ImageMagick. The edit prompt was:
-
-> Use case: precise-object-edit. Edit target: the supplied 64x64 transparent PNG,
-> which is the user's own rough hand-drawn favicon face. Create a square favicon
-> master. Change only its backdrop: add a perfectly round, flat dark slate gray
-> circle (#343a40) behind the existing white and silver-gray face. Preserve the
-> face's distinctive uneven hand-drawn/pixel marks, expression, proportions, and
-> asymmetry; do not replace it with a different face, a polished emoji, an avatar,
-> a skull, or a stock smiley. Center the original face and scale it uniformly only
-> as needed so its entire drawing fits within the circle with about 10 percent
-> inner breathing room. The circle should fill about 94 percent of the square.
-> Keep everything outside the circle genuinely transparent. Crisp simple favicon
-> treatment with no gradients, shadows, border, lettering, or additional shapes.
-> The face must stay recognizable as the exact supplied drawing. Output one
-> square PNG master.
-
-To export the touch and tile assets again after updating that earlier master:
+To rebuild the remaining images with ImageMagick:
 
 ```powershell
-magick images/favicon-master.png -resize 192x192 -strip icon.png
-magick images/favicon-master.png -resize 180x180 -strip apple-touch-icon.png
-magick images/favicon-master.png -resize 558x558 -strip tile.png
-magick images/favicon-master.png -resize 256x256 -gravity center -background none -extent 558x270 -strip tile-wide.png
+Copy-Item -LiteralPath favicon64.png -Destination favicon.png
+magick favicon64.png -filter point -resize 192x192 -strip icon.png
+magick favicon64.png -filter point -resize 180x180 -strip apple-touch-icon.png
+magick favicon64.png -filter point -resize 512x512 -strip images/favicon-master.png
+magick favicon64.png -filter point -resize 558x558 -strip tile.png
+magick favicon64.png -filter point -resize 256x256 -gravity center -background none -extent 558x270 -strip tile-wide.png
 ```
 
 ## Preview
