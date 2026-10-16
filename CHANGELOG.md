@@ -2,8 +2,9 @@
 
 ## 2026-10-16
 
-- Removed the retired `uiexperiement` branch from origin after the local branch
-  was deleted. Verified the live remote branch list and clean master checkout.
+- Removed the retired `uiexperiement` and obsolete
+  `dependabot/npm_and_yarn/json5-1.0.2` branches from origin. Verified that
+  `master` is the only remaining remote branch and that Dependabot PR #1 closed.
 - Moved Dude Stickers directly after Bricksoft, preserving its link and blurb.
   Verified the new order, browser rendering, and Git whitespace checks.
 - Added Keep In Touch, Dude Stickers, and Plain-Text Suite to the home page's
