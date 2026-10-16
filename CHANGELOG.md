@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Removed the retired `uiexperiement` branch from origin after the local branch
+  was deleted. Verified the live remote branch list and clean master checkout.
 - Moved Dude Stickers directly after Bricksoft, preserving its link and blurb.
   Verified the new order, browser rendering, and Git whitespace checks.
 - Added Keep In Touch, Dude Stickers, and Plain-Text Suite to the home page's
