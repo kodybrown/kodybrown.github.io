@@ -2,6 +2,10 @@
 
 ## 2026-10-16
 
+- Made the professional introduction more general and added matching linked
+  company headings and blurbs below the résumé links: Bricksoft first, then
+  Vutility with the HotDrop, VoltDrop, and IoT work. Verified ordering, matching
+  heading styles, link destinations, browser rendering, and whitespace checks.
 - Added Bricksoft as the current company at the start of "Professional
   background," linking to bricksoft.com and describing its custom sensors,
   smart gateways, and enterprise sensor data platform. Verified placement,
