@@ -2,6 +2,10 @@
 
 ## 2026-10-16
 
+- Added Bricksoft as the current company at the start of "Professional
+  background," linking to bricksoft.com and describing its custom sensors,
+  smart gateways, and enterprise sensor data platform. Verified placement,
+  the link destination, browser rendering, and Git whitespace checks.
 - Moved "Things I make and share" after "Professional background" as the final
   home page section. Verified the section order and Git whitespace checks.
 - Removed the home page's duplicate "Find me" section and its unused CSS,
