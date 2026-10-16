@@ -2,6 +2,10 @@
 
 ## 2026-10-15
 
+- Added local SVG links for X, GitHub, Stack Overflow, and LinkedIn to the top
+  right of both page headers, retaining the labeled contact links below. Checked
+  icon loading, accessible names, keyboard focus, 44-pixel link targets, and
+  narrow-screen wrapping without horizontal overflow.
 - Simplified the personal site to Home and Résumé, retaining the bordered page
   tabs and adding a durable personal introduction, links to Wasatch Wizard and
   WeekendTech, and X, LinkedIn, GitHub, and Stack Overflow profiles.

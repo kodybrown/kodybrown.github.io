@@ -10,6 +10,8 @@ A small, static personal website, hosted on GitHub Pages at
   native PDF viewer. It also includes an expandable HTML text version; update
   both versions together when changing résumé content.
 - `css/personal.css` is the hand-authored stylesheet used by both pages.
+- Both page headers include the same social profile links; update them together.
+  Local SVG icons and their upstream license are in `images/social/`.
 - `resume_cover.html` and `resume_print.html` forward existing bookmarks to
   `resume.html`; Home and Résumé are the only content pages in the navigation.
 
