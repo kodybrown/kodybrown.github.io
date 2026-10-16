@@ -2,6 +2,10 @@
 
 ## 2026-10-16
 
+- Added Keep In Touch, Dude Stickers, and Plain-Text Suite to the home page's
+  project links, with short descriptions checked against their local source.
+  Corrected both footers to "Online since 1994" using the owner's history.
+  Verified links, section order, browser rendering, and whitespace checks.
 - Made the professional introduction more general and added matching linked
   company headings and blurbs below the résumé links: Bricksoft first, then
   Vutility with the HotDrop, VoltDrop, and IoT work. Verified ordering, matching
