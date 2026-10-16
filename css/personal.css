@@ -217,19 +217,6 @@ section {
   font-weight: 600;
 }
 
-.profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.4rem;
-  padding: 0;
-  list-style: none;
-}
-
-.profile-links a {
-  display: inline-block;
-  padding-block: 0.4rem;
-}
-
 .site-footer {
   margin-top: 3rem;
   padding-top: 1rem;

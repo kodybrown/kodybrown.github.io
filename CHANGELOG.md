@@ -2,6 +2,9 @@
 
 ## 2026-10-16
 
+- Removed the home page's duplicate "Find me" section and its unused CSS,
+  retaining the existing header contact icons. Verified unchanged header
+  markup, browser rendering, and Git whitespace checks.
 - Recorded the three sites' roles and future generator choices in the README:
   Eleventy for a personal blog and Wasatch Wizard's Blogger replacement, and
   Astro for WeekendTech. Documented Markdown/GitHub publishing and migration
