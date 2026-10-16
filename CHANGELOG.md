@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-16
+
+- Added a matching local SVG email icon linking to `kody@kodybrown.com`. Ordered
+  both headers as Email, Stack Overflow, GitHub, LinkedIn, and X, with the lower
+  contact links following the same order.
+- Updated the local preview command to use `gostatic.exe` and checked its flags
+  against the installed tool's help output.
+- Verified the email destination, matching five-link headers, local icon loading,
+  accessible names, 44-pixel targets, mobile wrapping, and whitespace checks.
+
 ## 2026-10-15
 
 - Added local SVG links for X, GitHub, Stack Overflow, and LinkedIn to the top

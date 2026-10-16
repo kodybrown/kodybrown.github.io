@@ -2,7 +2,7 @@
 
 The SVG files are unmodified icons from
 [Bootstrap Icons v1.13.1](https://github.com/twbs/icons/tree/v1.13.1/icons):
-`twitter-x.svg`, `github.svg`, `stack-overflow.svg`, and `linkedin.svg`.
+`at.svg`, `stack-overflow.svg`, `github.svg`, `linkedin.svg`, and `twitter-x.svg`.
 
 They are served locally as images. The site does not load Bootstrap CSS,
 JavaScript, an icon font, or an external icon service.

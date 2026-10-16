@@ -83,6 +83,12 @@ a:hover {
   filter: brightness(0) invert(1);
 }
 
+.header-profile-links .email-icon {
+  /* The @ asset includes more internal space than the brand icons. */
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
 .site-name {
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;

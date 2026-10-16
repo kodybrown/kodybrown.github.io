@@ -10,7 +10,8 @@ A small, static personal website, hosted on GitHub Pages at
   native PDF viewer. It also includes an expandable HTML text version; update
   both versions together when changing résumé content.
 - `css/personal.css` is the hand-authored stylesheet used by both pages.
-- Both page headers include the same social profile links; update them together.
+- Both page headers include the same contact and profile links; update them
+  together.
   Local SVG icons and their upstream license are in `images/social/`.
 - `resume_cover.html` and `resume_print.html` forward existing bookmarks to
   `resume.html`; Home and Résumé are the only content pages in the navigation.
@@ -25,7 +26,7 @@ From PowerShell:
 
 ```powershell
 cd C:\Users\kodyb\Projects\KodyBrown.com\www.kodybrown.com
-python -m http.server 8081 --bind 127.0.0.1
+gostatic.exe -path . -port 8081
 ```
 
 Open <http://localhost:8081/>. If a preview server is already running on 8081,
