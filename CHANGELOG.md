@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Moved Dude Stickers directly after Bricksoft, preserving its link and blurb.
+  Verified the new order, browser rendering, and Git whitespace checks.
 - Added Keep In Touch, Dude Stickers, and Plain-Text Suite to the home page's
   project links, with short descriptions checked against their local source.
   Corrected both footers to "Online since 1994" using the owner's history.
