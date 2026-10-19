@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-19
+
+- Added Terra Vista Software as the current employer above the other companies
+  in Professional background, linking to its website and describing custom
+  software, web apps, and web services for predominantly fintech customers.
+  Verified desktop and narrow layouts, résumé navigation, and Git whitespace.
+
 ## 2026-10-16
 
 - Removed the retired `uiexperiement` and obsolete
