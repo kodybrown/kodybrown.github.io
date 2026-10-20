@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-20
+
+- Matched Wasatch Wizard's typography with locally hosted Merriweather Bold
+  headings and site name, plus Oxygen Regular/Bold body text on both pages.
+  Included font licenses and source URLs, and refreshed stylesheet cache keys.
+  Verified desktop and 320-pixel layouts, résumé navigation and text disclosure,
+  local font responses and source hashes, and Git whitespace checks.
+
 ## 2026-10-19
 
 - Added Terra Vista Software as the current employer above the other companies

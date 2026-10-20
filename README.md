@@ -10,6 +10,9 @@ A small, static personal website, hosted on GitHub Pages at
   native PDF viewer. It also includes an expandable HTML text version; update
   both versions together when changing résumé content.
 - `css/personal.css` is the hand-authored stylesheet used by both pages.
+- Both pages use locally hosted Merriweather Bold headings and Oxygen
+  Regular/Bold body text, matching Wasatch Wizard. Font files, licenses, and
+  source URLs are in `css/fonts/`; the embedded résumé PDF has its own fonts.
 - Both page headers include the same contact and profile links; update them
   together.
   Local SVG icons and their upstream license are in `images/social/`.
